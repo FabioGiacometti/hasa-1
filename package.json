@@ -1,0 +1,12 @@
+{
+  "name": "hasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "diego herrera & Fabio Giacometti",
+  "license": "ISC",
+  "dependencies": {}
+}
