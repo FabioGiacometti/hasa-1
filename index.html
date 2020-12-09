@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hasa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/css/styles.css">
     <!-- jQuery library -->
 
 </head>
@@ -12,13 +13,13 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">HASA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
               <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="#">Clientes <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -32,12 +33,90 @@
                   </li>
               </ul>
             </div>
+          </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-2">Entregando Calidad desde 1960</h1>
+            <button class="btn btn-success">Conozca nuestros productos</button>
+          </div>
         </div>
-          </nav>
     </header>
+    <body>
+      <main>
+        <!--Product Slider-->
+        <div id="myCarousel" class="carousel slide ">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                </div>
+
+                <div class="col-sm-4">
+                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>4 slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>5 slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>6 slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </main>
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+
 </body>
 </html>
