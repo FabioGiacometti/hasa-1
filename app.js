@@ -1,25 +1,10 @@
-/* var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel,{
-    interval: 2000,
-    wrap: false,
-    pause:'hover',
-    cycle:true
-})
+document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 3,
+        perMove:1,
+        fixedHeight:250,
+        fixedWidth:250
 
-carousel.cycle() */
-
-/* $('.carousel').carousel({
-    interval: 2000
-  }) */
-/*   $(document).ready(function(){
-    // Activate Carousel
-    $("#myCarousel").carousel();
-});
-
-$('.carousel-control.left').click(function() {
-    $('#myCarousel').carousel('prev');
-  });
-  
-  $('.carousel-control.right').click(function() {
-    $('#myCarousel').carousel('next');
-  }); */
+    } ).mount()
+} )

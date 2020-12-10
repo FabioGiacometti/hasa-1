@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hasa</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="./styles/css/styles.css">
     <!-- jQuery library -->
 
@@ -45,70 +46,19 @@
     <body>
       <main>
         <!--Product Slider-->
-        <div id="myCarousel" class="carousel slide ">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-sm-4">
-                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-
-                </div>
-
-                <div class="col-sm-4">
-                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-4">
-                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>4 slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>5 slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-                </div>
-                <div class="col-lg-4">
-                  <img src="https://via.placeholder.com/250" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>6 slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-              </div>
-              
-            </div>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="./assets/imgs/obras1.jpg"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras2.jpg"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras3.jpg"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras4.jpg"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras5.jpg"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras5.JPG"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras2.jpg"></li>
+              <li class="splide__slide"><img src="./assets/imgs/obras3.jpg"></li>
+            </ul>
           </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
         </div>
       </main>
       
@@ -117,6 +67,7 @@
       </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
 </body>
 </html>
