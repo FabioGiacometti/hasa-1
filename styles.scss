@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap');
 
+
 :root{
     --title: "Alfa Slab One", sans-serif;
     --text: "Cantarell", sans-serif;
     --azul-principal: #006CA7;
     --azul-secundario: #2E9AD5;
+    
 }
 
 body{
@@ -43,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 
 .display-3{
     color: var(--azul-principal);
-    font-size:2rem;
+    font-size:2.2rem;
 }
 
 .btn-success{
@@ -55,14 +57,32 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
-.navbar-custom{
-    background-color: white;
+nav.bg-ligh.navbar-custom{
+    background-color: white!important;
 }
 
-.hero-image{
+.servicios{
+   padding: 2rem 0rem 2rem 0rem;
+    background-color: #C4C4C4;
+    p{
+        margin-bottom: 0;
+    }
+    .card > img{
+        width: 116px;
+        padding-left: 8px;
+        padding-top:2rem;
+    }
 
-        max-height: 50%;
+}
+.carousel-item{
+    height:600px;
+    width:100%;
+}
+.product__items{
 
+    background-image: url("./assets/imgs/obras5.JPG")!important;
+    background-size:  cover;
+    
 }
 
 footer{
