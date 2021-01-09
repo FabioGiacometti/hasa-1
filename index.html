@@ -1,125 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hasa</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <!-- jQuery library -->
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>Hasa</title>
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet"
+    href="/css/styles.css">
+  <!-- jQuery library -->
 
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/iconos/logo-header.svg" class="logo-header"alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Clientes <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Obras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container row">
-          <div class="col-6">
-            <h1 class="display-3">Entregando Calidad desde 1960</h1>
-            <button class="btn btn-success">Conozca nuestros productos</button>
-          </div>
-          <img src="assets/imgs/hero-image.png" alt="" class="col-6">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand"
+          href="#"><img src="assets/imgs/iconos/logo-header.svg"
+            class="logo-header"
+            alt=""></a>
+        <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo02">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link"
+                href="#">Clientes <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="#">Obras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="#">Contactos</a>
+            </li>
+          </ul>
         </div>
       </div>
-      
-      <main>
-        <!--Product Slider-->
-        <!-- <div class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras1.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras2.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras3.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras4.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras5.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras2.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras4.jpg">
-              </li>
-              <li class="splide__slide">
-                <div class="description">
-                  <h2>Titulo de Obra</h2>
-                  <p>Descripcion de la obra Descripcion de la obra Descripcion de la obra Descripcion de la obra</p>
-                </div>
-                <img src="./assets/imgs/obras2.jpg">
-              </li>
+    </nav>
+  </header>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 my-auto">
+          <h1 class="display-3">Entregando Calidad desde 1960</h1>
+          <p class="hero__description">Fabricación e instalación de tubos y caños
+            de alto rendimiento. Este bloque debiera tener
+            sufieciente contenido para tres lineas de texto</p>
+          <button class="btn btn-success">Conozca nuestros productos</button>
+        </div>
+        <img src="assets/imgs/hero-image.png"
+          alt=""
+          class="col-6">
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="servicios"
+      class="servicios">
+      <div class="container">
+
+        <article class="card">
+          <img src=""
+            alt=""
+            class="card__image">
+          <p class="card__description">
+            Nuestra empresa cuenta con una larga trayectoria metalúrgica, especializándonos en fabricación y montaje de
+            cañerías y accesorios de acero para la conducción de fluidos; desde diámetros DN 50mm hasta DN 3000mm.
+          </p>
+          <a href=""
+            class="card__link inline">Nuestros Productos<img src="assets/imgs/iconos/arrow.png"
+              alt=""
+              class="card__link--arrow inline"></a>
+        </article>
+
+        <article class="card">
+          <img src=""
+            alt=""
+            class="card__image">
+          <p class="card__description">Trabajamos bajo normas, a solicitud de nuestros clientes. Nuestra experiencia y
+            conocimiento en el rubro nos permite ofrecerles en forma exclusiva, asistencia de preventa y postventa, para
+            lograr la mejor solución a los requerimientos del cliente.</p>
+          <a href=""
+            class="card__link inline">Nuestros Clientes<img src="assets/imgs/iconos/arrow.png"
+              alt=""
+              class="card__link--arrow inline"></a>
+        </article>
+
+        <article class="card">
+          <img src=""
+            alt=""
+            class="card__image">
+          <p class="card__description">Nuestra misión es brindar en forma proactiva soluciones de ingeniería con alto
+            valor agregado, confiable y diseñadas al requerimiento de cada proyecto.</p>
+          <a href=""
+            class="card__link inline">Ver Proyectos<img src="assets/imgs/iconos/arrow.png"
+              alt=""
+              class="card__link--arrow inline"></a>
+        </article>
+      </div>
+    </section>
+    <section class="productos"
+      id="productos">
+      <div class="container">
+        <h2 class="section__title--white">Nuestros productos</h2>
+        <div class="row">
+          <div class="col-3">
+            <div class="product__image">
+              <div class="product__featured"></div>
+            </div>
+            <ul class="product__items">
+              <li class="product__description">Ramal tee</li>
+              <li class="product__description">Ramal tangencial</li>
+              <li class="product__description">Reducción concéntrica</li>
+              <li class="product__description">Reducción excéntrica</li>
+              <li class="product__description">Juntas de desarme auto portante</li>
+              <li class="product__description">Junta Teekay</li>
+              <li class="product__description">Conexión de unión tipo dresser simple bulonería</li>
             </ul>
           </div>
-        </div> -->
-      </main>
-      
+          <div class="col-3">
+            <div class="product__image">
+              <div class="product__featured"></div>
+            </div>
+            <ul class="product__items">
+              <li class="product__description">Conexión de unión tipo dresser doble bulonería</li>
+              <li class="product__description"> Tambor de reparación</li>
+              <li class="product__description"> Adaptador de brida</li>
+              <li class="product__description"> Manifold</li>
+              <li class="product__description"> Curva a 90°</li>
+              <li class="product__description"> Curva a 45°</li>
+              <li class="product__description"> Curva en los grados a solicitud del cliente</li>
+            </ul>
+          </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-      </script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="app.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+          <div class="col-3">
+            <div class="product__image">
+              <div class="product__featured"></div>
+            </div>
+            <ul class="product__items">
+              <li class="product__description"> Carretel – Pasamuro</li>
+              <li class="product__description"> Brida y Contrabrida</li>
+              <li class="product__description"> Ramal cruz</li>
+              <li class="product__description"> Compuertas Aisi 304 Y 316</li>
+              <li class="product__description"> Compuertas A° SAE 1010/1020</li>
+              <li class="product__description"> Mecanismo de izaje</li>
+            </ul>
+          </div>
+
+          <div class="col-3">
+            <div class="product__image">
+              <div class="product__featured"></div>
+            </div>
+            <ul class="product__items">
+              <li class="product__description"> Tapón prueba hidráulica</li>
+              <li class="product__description"> Toma en carga</li>
+              <li class="product__description"> Collar toma en carga de F°D°</li>
+            </ul>
+            <a class="cotizacion">Consulte Cotización<img src="assets/imgs/iconos/arrow-white.png"
+                alt=""
+                class="arrow"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clientes"
+      id="clientes">
+      <div class="container">
+        <h2 class="section__title--white">Nuestros Clientes</h2>
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li><img src="assets/imgs/logos/logo-aguas-colorado.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-aguas.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-alta-gracia.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-arc-1.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-carlos-paz.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-cclip.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-conorvial.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-coop-cosquin.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-coop-cruz.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-coop-rio-ceballos.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-estructuras.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-gieco.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-henisa.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-infra.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-install.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-item.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-marinelli.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-michelotti.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-min-agua.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-redex.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-roggio.jpg" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-romero.png" alt=""></li>
+              <li><img src="assets/imgs/logos/logo-rovella.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="obras" id="obras">
+      <div class="container">
+        <h2 class="section__title--white">Obras</h2>
+      </div>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous">
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
 </body>
+
 </html>
