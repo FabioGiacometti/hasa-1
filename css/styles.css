@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap");
+:root {
+  --title: "Alfa Slab One", sans-serif;
+  --text: "Cantarell", sans-serif;
+  --azul-principal: #006CA7;
+  --azul-secundario: #2E9AD5;
+}
+
+body {
+  font-family: var(--text);
+  padding: 0px;
+  margin: 0px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--azul);
+  color: white;
+  padding: 20px;
+  transition: all 0.5s ease-in;
+}
+
+.logo-header {
+  height: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title);
+}
+
+.display-3 {
+  color: var(--azul-principal);
+  font-size: 2rem;
+}
+
+.btn-success {
+  background-color: var(--azul-principal);
+  border-color: var(--azul-principal);
+}
+
+.btn-success:hover {
+  background-color: var(--azul-secundario);
+  border-color: var(--azul-principal);
+}
+
+.navbar-custom {
+  background-color: white;
+}
+
+footer {
+  bottom: 0px;
+  background-image: url("../assets/imgs/footer-back.png");
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer .footer-title {
+  color: white;
+  padding: 0.8rem 2.5rem;
+}
+
+footer p {
+  color: white;
+  margin: 0px;
+  font-size: 16px;
+}
+
+footer .site-map {
+  padding: 0.8rem 2.5rem;
+}
+
+footer .site-map a {
+  color: white;
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
