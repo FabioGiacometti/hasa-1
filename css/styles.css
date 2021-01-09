@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
 }
 
+.hero-image {
+  max-height: 50%;
+}
+
 footer {
   bottom: 0px;
   background-image: url("../assets/imgs/footer-back.png");
@@ -65,25 +69,48 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 2.5rem 0rem 6rem 0rem;
+}
+
+footer .footer-logo {
+  height: 58px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 footer .footer-title {
   color: white;
-  padding: 0.8rem 2.5rem;
+  padding: 0.5rem 2.5rem;
 }
 
-footer p {
+footer .footer-icon {
+  height: 28px;
+  margin-right: 0.5rem;
+}
+
+footer .footer-row {
+  margin-bottom: 2rem;
+}
+
+footer .footer-row p {
   color: white;
   margin: 0px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 footer .site-map {
-  padding: 0.8rem 2.5rem;
+  padding-left: 2.5rem;
 }
 
 footer .site-map a {
   color: white;
   display: block;
 }
+
+/* @media (min-width: 768px) {
+    .footer-logo{
+        margin-top: 50px;
+        padding-left: 186px;
+    }
+ } */
 /*# sourceMappingURL=styles.css.map */
