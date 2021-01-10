@@ -73,14 +73,14 @@ nav.bg-ligh.navbar-custom {
   padding-top: 2rem;
 }
 
-.carousel-item {
-  height: 600px;
-  width: 100%;
+.productos {
+  background-image: url("../assets/imgs/productos-fondo.png") !important;
 }
 
-.product__items {
-  background-image: url("./assets/imgs/obras5.JPG") !important;
-  background-size: cover;
+.productos .product__items {
+  padding: 2rem;
+  color: white;
+  min-height: 260px;
 }
 
 footer {

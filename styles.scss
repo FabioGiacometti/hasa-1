@@ -74,16 +74,17 @@ nav.bg-ligh.navbar-custom{
     }
 
 }
-.carousel-item{
-    height:600px;
-    width:100%;
-}
-.product__items{
 
-    background-image: url("./assets/imgs/obras5.JPG")!important;
-    background-size:  cover;
-    
+.productos{
+    background-image: url("../assets/imgs/productos-fondo.png")!important;
+    .product__items{
+        padding:2rem;
+        color:white;
+        min-height: 260px;
+    }
+
 }
+
 
 footer{
     bottom:0px;
