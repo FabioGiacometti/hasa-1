@@ -61,3 +61,20 @@ jQuery(document).ready(function() {
 	});
 	
 });
+
+
+
+//HAMBURGUER ANIMATION
+var $hamburger = $(".hamburger");
+$hamburger.on("click", function(e) {
+  $hamburger.toggleClass("is-active");
+
+});
+
+$('carousel-productos').carousel({
+	interval: 300
+  })
+
+$('#carousel-logo').carousel({
+	interval: 2000
+  })
