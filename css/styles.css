@@ -96,13 +96,11 @@ nav.bg-ligh.navbar-custom {
   background-color: var(--azul-principal);
 }
 
-#obras .carousel-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-  max-width: none;
+#obras .carousel-item .item {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
 }
 
 #obras .carousel-item .overlay-container {
@@ -117,7 +115,7 @@ nav.bg-ligh.navbar-custom {
   color: white;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   display: flex;
 }
 
@@ -129,19 +127,23 @@ nav.bg-ligh.navbar-custom {
   width: 70%;
   font-size: 22px;
   padding-bottom: 20px;
-  color: var(--azul-principal);
 }
 
 #obras .carousel-item .overlay-container .overlay-item p {
   color: var(--azul-secundario);
 }
 
-#clientes h2, #donde-estamos h2 {
+#clientes h2 {
   color: var(--azul-principal);
 }
 
 .formulario-contacto {
-  background-image: url("./assets/imgs/obras4.jpg");
+  background-image: url("../assets/imgs/formulario-contacto-bck.jpg");
+  background-size: cover;
+}
+
+.formulario-contacto .form-group {
+  color: white;
 }
 
 #carousel-logo .carousel-inner {
