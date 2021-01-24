@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--title);
 }
 
+.jumbotron-main-img {
+  min-height: 320px;
+  max-width: 380px;
+}
+
 .display-3 {
   color: var(--azul-principal);
   font-size: 2.2rem;
@@ -61,6 +66,14 @@ h1, h2, h3, h4, h5, h6 {
 .btn-success:hover {
   background-color: var(--azul-secundario);
   border-color: var(--azul-principal);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--azul-secundario);
+}
+
+.navbar-light .navbar-nav .nav-link a:hover {
+  color: var(--azul-principal);
 }
 
 nav.bg-ligh.navbar-custom {
