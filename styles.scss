@@ -4,6 +4,7 @@
 :root{
     --title: "Alfa Slab One", sans-serif;
     --text: "Cantarell", sans-serif;
+    --slider-title:28px;
     --azul-principal: #006CA7;
     --azul-secundario: #2E9AD5;
     
@@ -107,7 +108,7 @@ nav.bg-ligh.navbar-custom{
           }
         .overlay-container {
             position: absolute;
-            background: rgba(255,255,255,0.6);
+            background: rgba(255, 255, 255, 0.8);
             width: 100%;
             height: 100%;
             top: 0;
@@ -124,13 +125,16 @@ nav.bg-ligh.navbar-custom{
         
                     h6{ 
                         width: 70%;
-                        font-size: 22px;
+                        font-size: 28px;
                         padding-bottom: 20px;
+                        color:var(--azul-principal);
+                        font-size:var( --slider-title);
         
                     }
         
                     p{
-                        color:var(--azul-secundario)
+                        color:var(--azul-secundario);
+                        font-size:18px;
                     }
                 
                 }
