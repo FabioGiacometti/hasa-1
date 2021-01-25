@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap');
-
+@import '_queries.scss';
 
 :root{
     --title: "Alfa Slab One", sans-serif;
@@ -52,9 +52,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--title);
 }
 
+
 .jumbotron-main-img{
-    min-height: 320px;
-    max-width: 380px;
+    //padding-right: 26%;
+   
 }
 
 .display-3{
@@ -89,7 +90,14 @@ nav.bg-ligh.navbar-custom{
 
 }
 
+/*cards*/
+article.card{
+    min-height: 456px;
+    margin-top:40px;
+}
+
 .servicios{
+    margin-top:2rem;
    padding: 2rem 0rem 2rem 0rem;
     background-color: #C4C4C4;
     p{

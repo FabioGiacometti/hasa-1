@@ -1,0 +1,58 @@
+
+@media (min-width: 990px) { 
+    .jumbotron-fluid{
+        min-height: 80vh;
+        padding-bottom: 10rem;
+        padding-top:4rem;
+        background-color:#E0E0E0 ;
+        .jumbotron-panel{
+            
+            h1{
+                
+                color:#2E9AD5;
+
+            }
+            
+            p{
+                font-size: 24px;
+            }
+    
+            button{
+                padding:8px;
+                font-size:1rem;
+            }
+
+            img{
+/*                 max-width:fit-content;
+                height: 525px;
+                width: 609px;
+                padding-left: 0px; */
+            }
+
+
+            .display-3{
+                font-size: 2.5rem;
+            }
+
+            .hero__description{
+                font-size: 1rem
+            }
+        }
+    }
+
+    .jumbotron-main-img {
+        padding-right: 0%;
+    }
+
+
+    .service-overlap{
+        margin-top: -118px!important;
+    }
+
+    .carousel-productos.carousel-inner {
+        width: 20%!important;
+        max-width: none;
+     }
+
+
+ }
