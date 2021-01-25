@@ -16,12 +16,6 @@
     padding: 8px;
     font-size: 1rem;
   }
-  .jumbotron-fluid .jumbotron-panel img {
-    /*                 max-width:fit-content;
-                height: 525px;
-                width: 609px;
-                padding-left: 0px; */
-  }
   .jumbotron-fluid .jumbotron-panel .display-3 {
     font-size: 2.5rem;
   }
@@ -34,9 +28,12 @@
   .service-overlap {
     margin-top: -118px !important;
   }
-  .carousel-productos.carousel-inner {
-    width: 20% !important;
-    max-width: none;
+  #carousel-productos {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  #carousel-productos img {
+    width: 50%;
   }
 }
 
@@ -140,7 +137,9 @@ article.card {
 }
 
 .productos {
-  background-image: url("../assets/imgs/productos-fondo.png") !important;
+  background: url(../assets/imgs/productos-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .productos .product__items {

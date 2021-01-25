@@ -112,7 +112,9 @@ article.card{
 }
 
 .productos{
-    background-image: url("../assets/imgs/productos-fondo.png")!important;
+    background: url(../assets/imgs/productos-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     .product__items{
         padding:2rem;
         color:white;
