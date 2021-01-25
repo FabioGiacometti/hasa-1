@@ -35,6 +35,9 @@
   #carousel-productos img {
     width: 50%;
   }
+  h3 {
+    font-size: 2.2rem;
+  }
 }
 
 :root {
