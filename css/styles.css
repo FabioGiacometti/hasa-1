@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap");
+@media (max-width: 375px) {
+  .jumbotron-main-img {
+    max-height: 80%;
+  }
+  #carousel-obras .container-lg {
+    padding: 0px !important;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  #obras .container-lg {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 @media (min-width: 990px) {
   .jumbotron-fluid {
     min-height: 80vh;
@@ -22,21 +40,33 @@
   .jumbotron-fluid .jumbotron-panel .hero__description {
     font-size: 1rem;
   }
-  .jumbotron-main-img {
-    padding-right: 0%;
-  }
-  .service-overlap {
+  #servicios .service-overlap {
     margin-top: -118px !important;
+  }
+  #servicios .service-overlap article.card {
+    min-height: 483px;
   }
   #carousel-productos {
     width: 50% !important;
     margin: 0 auto;
   }
-  #carousel-productos img {
-    width: 50%;
-  }
   h3 {
     font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 990px) and (min-width: 990px) {
+  #obras .carousel-item .overlay-container {
+    top: 30%;
+    bottom: 30px;
+    right: 90px;
+    left: 30px;
+    width: 50%;
+    height: 50%;
+    text-align: left;
+  }
+  #obras .carousel-item img {
+    max-height: 1140px;
   }
 }
 
@@ -48,6 +78,12 @@
   --azul-secundario: #2E9AD5;
 }
 
+/* utils*/
+.main-blue {
+  color: var(--azul-principal);
+}
+
+/*******/
 body {
   font-family: var(--text);
   padding: 0px;
@@ -119,8 +155,16 @@ nav.bg-ligh.navbar-custom {
 
 /*cards*/
 article.card {
-  min-height: 456px;
   margin-top: 40px;
+}
+
+article.card:hover {
+  background-color: var(--azul-principal);
+  color: white;
+}
+
+article.card:hover a {
+  color: white;
 }
 
 .servicios {
@@ -155,13 +199,6 @@ article.card {
   background-color: var(--azul-principal);
 }
 
-#obras .carousel-item .item {
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 100%;
-}
-
 #obras .carousel-item .overlay-container {
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
@@ -183,7 +220,6 @@ article.card {
 }
 
 #obras .carousel-item .overlay-container .overlay-item h6 {
-  width: 70%;
   font-size: 28px;
   padding-bottom: 20px;
   color: var(--azul-principal);
@@ -260,10 +296,23 @@ footer .site-map a {
   display: block;
 }
 
-/* @media (min-width: 768px) {
-    .footer-logo{
-        margin-top: 50px;
-        padding-left: 186px;
-    }
- } */
+/* .carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+} */
+@media (min-width: 990px) {
+  #obras .carousel-item .overlay-container {
+    top: 30%;
+    bottom: 30px;
+    right: 90px;
+    left: 30px;
+    width: 50%;
+    height: 50%;
+    text-align: left;
+  }
+  #obras .carousel-item img {
+    max-height: 1140px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
