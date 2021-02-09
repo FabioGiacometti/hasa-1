@@ -101,7 +101,8 @@ body {
 .splide__slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .description {
@@ -114,6 +115,7 @@ body {
   background-color: var(--azul);
   color: white;
   padding: 20px;
+  -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
 
@@ -209,9 +211,18 @@ article.card:hover a {
   right: 0;
   left: 0;
   color: white;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -236,7 +247,7 @@ article.card:hover a {
 }
 
 .formulario-contacto {
-  background-image: url("../assets/imgs/formulario-contacto-bck.jpg");
+  background-image: url("../assets/imgs/mapaHasa.png");
   background-size: cover;
 }
 
@@ -245,8 +256,12 @@ article.card:hover a {
 }
 
 #carousel-logo .carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 238px;
   min-height: 300px;
 }
