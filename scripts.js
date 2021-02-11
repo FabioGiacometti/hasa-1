@@ -86,5 +86,5 @@ $('#carousel-logo').carousel({
   })
 
   $('#carousel-obras').carousel({
-	interval: 4000
+	interval: 500
   })
