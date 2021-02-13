@@ -55,19 +55,18 @@
   }
 }
 
-@media (min-width: 990px) and (min-width: 990px) {
-  #obras .carousel-item .overlay-container {
-    top: 30%;
-    bottom: 30px;
-    right: 90px;
-    left: 30px;
-    width: 50%;
-    height: 50%;
-    text-align: left;
-  }
-  #obras .carousel-item img {
-    max-height: 1140px;
-  }
+#obras .carousel-item .overlay-container {
+  top: 30%;
+  bottom: 30px;
+  right: 90px;
+  left: 30px;
+  width: 50%;
+  height: 50%;
+  text-align: left;
+}
+
+#obras .carousel-item img {
+  max-height: 1140px;
 }
 
 :root {
@@ -192,7 +191,7 @@ article.card:hover a {
 }
 
 .productos .product__items {
-  padding: 2rem;
+  padding-top: 1.5rem;
   color: white;
   min-height: 260px;
 }
@@ -310,11 +309,7 @@ footer .site-map a {
   display: block;
 }
 
-/* .carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  display: block;
-} */
+/*No mover a queries.scss*/
 @media (min-width: 990px) {
   #obras .carousel-item .overlay-container {
     top: 30%;
@@ -326,7 +321,21 @@ footer .site-map a {
     text-align: left;
   }
   #obras .carousel-item img {
-    max-height: 1140px;
+    max-height: 980px;
+  }
+  .carousel {
+    margin: 1.5rem;
+  }
+  .carousel-inner {
+    height: auto;
+  }
+  .carousel-control-prev {
+    margin-left: -100px;
+  }
+  .carousel-control-next {
+    margin-right: -100px;
   }
 }
+
+/*No mover*/
 /*# sourceMappingURL=styles.css.map */

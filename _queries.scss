@@ -3,16 +3,13 @@
     .jumbotron-main-img {
         max-height:80%;
     }
+
     #carousel-obras{
-        
         .container-lg{
             padding:0px!important;
             margin:0px;
-        }
-        
-        
+        }   
     }
-
 }
 
 @media (max-width: 576px) { 
@@ -20,19 +17,16 @@
     .container-lg{
         width: 100%;
         padding-left: 0px;
-        padding-right: 0px;
-
-
+        padding-right: 0px;        
     }
-
-
   }
-
 }
 
 
 
 @media (min-width: 990px) { 
+
+    
 
     .jumbotron-fluid{
         min-height: 80vh;
@@ -78,22 +72,18 @@
         }
     }
 
-
-
     #carousel-productos {
         width: 50%!important;
         margin:0 auto;
-     }
+        }
 
 
 
-     h3{
-         font-size:2.2rem;
-     }
+        h3{
+            font-size:2.2rem;
+        }
 
-
-     
-@media (min-width: 990px) { 
+    }
 
     #obras {
         .carousel-item .overlay-container{
@@ -110,12 +100,14 @@
             img{
                 max-height: 1140px;
             }
-
-
         }
     }
-}
+
+
+
+     
+
 
 
     
- }
+ 
