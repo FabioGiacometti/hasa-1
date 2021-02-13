@@ -183,8 +183,8 @@ article.card{
 
 
 .formulario-contacto{
-    background-image:url("../assets/imgs/mapaHasa.png");
-    background-size: cover;
+    // background-image:url("../assets/imgs/mapaHasa.png");
+    background: var(--azul-principal);
     .form-group{
         color:white;
     }

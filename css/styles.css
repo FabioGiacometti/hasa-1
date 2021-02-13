@@ -247,8 +247,7 @@ article.card:hover a {
 }
 
 .formulario-contacto {
-  background-image: url("../assets/imgs/mapaHasa.png");
-  background-size: cover;
+  background: var(--azul-principal);
 }
 
 .formulario-contacto .form-group {
