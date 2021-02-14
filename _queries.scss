@@ -98,7 +98,9 @@
 
         .carousel-item{
             img{
-                max-height: 1140px;
+                max-height: 80vh;
+                width: 100vw;
+                object-fit: cover;
             }
         }
     }

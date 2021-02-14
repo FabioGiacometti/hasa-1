@@ -66,7 +66,10 @@
 }
 
 #obras .carousel-item img {
-  max-height: 1140px;
+  max-height: 80vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 :root {
@@ -87,14 +90,11 @@ body {
   font-family: var(--text);
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .white {
   color: white;
-}
-
-.carousel-inner {
-  min-height: 570px;
 }
 
 .splide__slide img {
@@ -200,6 +200,13 @@ article.card:hover a {
   background-color: var(--azul-principal);
 }
 
+#obras .carousel-item img {
+  max-height: 80vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #obras .carousel-item .overlay-container {
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
@@ -246,7 +253,7 @@ article.card:hover a {
 }
 
 .formulario-contacto {
-  background: var(--azul-principal);
+  background: #262B3F;
 }
 
 .formulario-contacto .form-group {
@@ -321,10 +328,13 @@ footer .site-map a {
     text-align: left;
   }
   #obras .carousel-item img {
-    max-height: 980px;
+    max-height: 80vh;
+    width: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .carousel {
-    margin: 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
   }
   .carousel-inner {
     height: auto;

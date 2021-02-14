@@ -20,7 +20,7 @@ body{
     font-family: var(--text);
     padding: 0px;
     margin: 0px;
-
+    overflow-x: hidden;
 }
 
 .white{
@@ -28,7 +28,7 @@ body{
 }
   
   .carousel-inner{
-    min-height: 570px;
+    // min-height: 570px;
   }
 
 .splide__slide img {
@@ -136,6 +136,11 @@ article.card{
     background-color: var(--azul-principal);
 
     .carousel-item{
+        img{
+            max-height: 80vh;
+            width: 100vw;
+            object-fit: cover;
+        }
         .overlay-container {
             position: absolute;
             background: rgba(255, 255, 255, 0.8);
@@ -178,7 +183,7 @@ article.card{
 
 .formulario-contacto{
     // background-image:url("../assets/imgs/mapaHasa.png");
-    background: var(--azul-principal);
+    background:#262B3F;
     .form-group{
         color:white;
     }
@@ -255,13 +260,15 @@ footer{
 
         .carousel-item{
             img{
-                max-height: 980px;
+                max-height: 80vh;
+                width: 100vw;
+                object-fit: cover;
             }
         }
     }
 
     .carousel {
-        margin: 1.5rem;
+        margin: 0 1.5rem 0 1.5rem;
       }
       .carousel-inner {
         height: auto;
