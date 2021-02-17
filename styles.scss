@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap');
-@import '_queries.scss';
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap");
+@import "_queries.scss";
 
-:root{
-    --title: "Alfa Slab One", sans-serif;
-    --text: "Cantarell", sans-serif;
-    --slider-title:28px;
-    --azul-principal: #006CA7;
-    --azul-secundario: #2E9AD5;
-    
+:root {
+  --title: "Alfa Slab One", sans-serif;
+  --text: "Cantarell", sans-serif;
+  --slider-title: 28px;
+  --azul-principal: #006ca7;
+  --azul-secundario: #2e9ad5;
 }
 
 /* utils*/
-.main-blue{
-    color:var(--azul-principal);
+.main-blue {
+  color: var(--azul-principal);
 }
 /*******/
 
-body{
-    font-family: var(--text);
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
+body {
+  font-family: var(--text);
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.white{
-    color:white;
+.white {
+  color: white;
 }
-  
+
 /*   .carousel-inner{
     //min-height: 570px;
   } */
@@ -54,234 +54,233 @@ body{
   height: 40px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: var(--title);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title);
 }
 
-
-
-.display-3{
-    color: var(--azul-principal);
-    font-size:2.2rem;
+.display-3 {
+  color: var(--azul-principal);
+  font-size: 2.2rem;
 }
 
-.btn-success{
-    background-color: var(--azul-principal);
+.btn-success {
+  background-color: var(--azul-principal);
+  border-color: var(--azul-principal);
+  &:hover {
+    background-color: var(--azul-secundario);
     border-color: var(--azul-principal);
-    &:hover{
-        background-color: var(--azul-secundario);
-        border-color: var(--azul-principal);
-    }
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--azul-secundario);
+  color: var(--azul-secundario);
 
-    a:hover{
-        color:var(--azul-principal);
-    }
+  a:hover {
+    color: var(--azul-principal);
+  }
 }
 
-
-
-nav.bg-ligh.navbar-custom{
-    padding-top:4rem;
-    background-color: white!important;
-
-    
-
+nav.bg-ligh.navbar-custom {
+  padding-top: 4rem;
+  background-color: white !important;
 }
 
 /*cards*/
-article.card{
-    margin-top:40px;
-    &:hover{
-        //border: 8px solid black;
-        background-color: var(--azul-principal);
-        color:white;
-        a{
-            color:white;
-        }
-    }
-}
-
-.servicios{
-    margin-top:2rem;
-   padding: 2rem 0rem 2rem 0rem;
-    background-color: #C4C4C4;
-    p{
-        margin-bottom: 0;
-    }
-    .card > img{
-        width: 116px;
-        padding-left: 8px;
-        padding-top:2rem;
-    }
-
-}
-
-.productos{
-    background: url(../assets/imgs/productos-fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    .product__items{
-        padding-top: 1.5rem;
-        color: white;
-        min-height: 260px;
-    }
-
-}
-
-#obras{ 
+article.card {
+  margin-top: 40px;
+  &:hover {
+    //border: 8px solid black;
     background-color: var(--azul-principal);
-
-    .carousel-item{
-        img{
-            max-height: 80vh;
-            width: 100vw;
-            object-fit: cover;
-        }
-        .overlay-container {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.8);
-            width: 100%;
-            height: 100%;
-            top: 0;
-            bottom:0;
-            right: 0;
-            left:0;
-            color:white; 
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-                .overlay-item{
-                    width: 80%;
-        
-                    h6{ 
-                        font-size: 28px;
-                        padding-bottom: 20px;
-                        color:var(--azul-principal);
-                        font-size:var( --slider-title);
-                    }
-        
-                    p{
-                        color:var(--azul-secundario);
-                        font-size:18px;
-                    }
-                }
-            }
-    }    
-}
-
-#clientes{
-    h2{
-        color: var(--azul-principal);
+    color: white;
+    a {
+      color: white;
     }
+  }
 }
 
+.servicios {
+  margin-top: 2rem;
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: #c4c4c4;
+  p {
+    margin-bottom: 0;
+  }
+  .card > img {
+    width: 116px;
+    padding-left: 8px;
+    padding-top: 2rem;
+  }
+}
 
-.formulario-contacto{
-    // background-image:url("../assets/imgs/mapaHasa.png");
-    background:#262B3F;
-    .form-group{
-        color:white;
+.productos {
+  background: url(../assets/imgs/productos-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .product__items {
+    padding-top: 1.5rem;
+    color: white;
+    min-height: 260px;
+  }
+}
+
+#obras {
+  background-color: var(--azul-principal);
+
+  .carousel-item {
+    img {
+      max-height: 80vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+    .overlay-container {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      .overlay-item {
+        width: 80%;
+
+        h6 {
+          font-size: 28px;
+          padding-bottom: 20px;
+          color: var(--azul-principal);
+          font-size: var(--slider-title);
+        }
+
+        p {
+          color: var(--azul-secundario);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+#clientes {
+  h2 {
+    color: var(--azul-principal);
+  }
+}
+
+.formulario-contacto {
+  // background-image:url("../assets/imgs/mapaHasa.png");
+  background: #262b3f;
+  .form-group {
+    color: white;
+  }
+}
+
+#carousel-logo {
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    min-height: 238px;
+    min-height: 300px;
+  }
+}
+
+footer {
+  bottom: 0px;
+  background-image: url("../assets/imgs/footer-back.png");
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.5rem 0rem 6rem 0rem;
+  .footer-logo {
+    height: 58px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-title {
+    color: white;
+    padding: 0.5rem 2.5rem;
+  }
+  .footer-icon {
+    height: 28px;
+    margin-right: 0.5rem;
+  }
+
+  .footer-row {
+    margin-bottom: 2rem;
+    p {
+      color: white;
+      margin: 0px;
+      font-size: 18px;
     }
   }
 
-#carousel-logo{
-    .carousel-inner{
-        display: flex;
-        align-items: center;
-        min-height: 238px;
-        min-height:300px;
+  .site-map {
+    padding-left: 2.5rem;
+    a {
+      color: white;
+      display: block;
     }
-    
+  }
 }
-
-
-
-footer{
-    bottom:0px;
-    background-image: url("../assets/imgs/footer-back.png");
-    width: 100vw;
-    background-size:  cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 2.5rem 0rem 6rem 0rem;
-    .footer-logo{
-        height: 58px;
-        margin-top: 2rem;
-        margin-bottom:2rem
-    }
-    .footer-title{
-        color:white;
-        padding:0.5rem 2.5rem;
-    }
-    .footer-icon{
-        height: 28px;
-        margin-right: 0.5rem;
-    }
-
-    .footer-row{
-        margin-bottom: 2rem;
-        p{
-            color:white;
-            margin: 0px;
-            font-size: 18px;
-        }
-    }
-
-    .site-map{
-        padding-left: 2.5rem;
-        a{
-            color:white;
-            display: block;
-        }
-    }
-
-}
-
-
 
 /*No mover a queries.scss*/
 
-@media (min-width: 990px) { 
-    #obras {
-        .carousel-item .overlay-container{
-            top: 30%;
-            bottom: 30px;
-            right: 90px;
-            left: 30px;
-            width: 50%;
-            height: 50%;
-            text-align: left;   
-        }
-
-        .carousel-item{
-            img{
-                max-height: 80vh;
-                width: 100vw;
-                object-fit: cover;
-            }
-        }
+@media (min-width: 990px) {
+  #obras {
+    .carousel-item .overlay-container {
+      top: 30%;
+      bottom: 30px;
+      right: 90px;
+      left: 30px;
+      width: 50%;
+      height: 50%;
+      text-align: left;
     }
 
-    .carousel {
-        margin: 0 1.5rem 0 1.5rem;
+    .carousel-item {
+      img {
+        max-height: 80vh;
+        width: 100vw;
+        object-fit: cover;
       }
-      .carousel-inner {
-        height: auto;
-      }
-      
-      .carousel-control-prev {
-        margin-left: -100px;
-      }
-      
-      .carousel-control-next {
-        margin-right: -100px;
-      }
+    }
+  }
+
+  .carousel {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  .carousel-inner {
+    height: auto;
+  }
+
+  .carousel-control-prev {
+    margin-left: -100px;
+  }
+
+  .carousel-control-next {
+    margin-right: -100px;
+  }
 }
-    
+
 /*No mover*/
 
+.grid-logos {
+  max-width: 140px;
+  filter: grayscale(0.5);
+  opacity: 0.5;
+  transition: all 200ms;
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+}

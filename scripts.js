@@ -82,9 +82,9 @@ $('carousel-productos').carousel({
   })
 
 $('#carousel-logo').carousel({
-	interval: 2000
+	interval: 500
   })
 
   $('#carousel-obras').carousel({
-	interval: 500
+	interval: 3200
   })
