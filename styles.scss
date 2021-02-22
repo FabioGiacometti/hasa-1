@@ -27,6 +27,18 @@ body {
   color: white;
 }
 
+header {
+  position: fixed;
+  background-color: white;
+  display: block;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0px 0px 2px 5px #00000010;
+}
+
+main {
+  padding-top: 60px;
+}
 /*   .carousel-inner{
     //min-height: 570px;
   } */
@@ -61,6 +73,12 @@ h4,
 h5,
 h6 {
   font-family: var(--title);
+}
+
+h2 {
+  @media (max-width: 991px) {
+    margin-top: 10px;
+  }
 }
 
 .display-3 {
@@ -270,6 +288,20 @@ footer {
   .carousel-control-next {
     margin-right: -100px;
   }
+
+  header {
+    position: static;
+  }
+
+  main {
+    padding-top: 0;
+  }
+}
+
+.jumbotron-main-img {
+  @media (max-width: 991px) {
+    opacity: 0.2;
+  }
 }
 
 /*No mover*/
@@ -283,4 +315,57 @@ footer {
     opacity: 1;
     filter: grayscale(0);
   }
+}
+
+.confirmacion {
+  margin: auto;
+  position: fixed;
+  max-width: 500px;
+  width: calc(100vw - 50px);
+  height: calc(100vw - 50px);
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: white;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  box-shadow:  0 0 34px 12px #00000050;
+  font-size: 24px;
+  transition: left 200ms ease-in-out;
+
+  button{
+    padding: 3px 15px;
+    align-self: flex-end;
+  }
+}
+
+.center{
+  left: 0;
+}
+
+.spinner-span{
+  display: none;
+  border: 4px solid #ffffff50;
+  height: 20px;
+  width: 20px;
+  transform: translate(23px, 4px) rotate(0deg);
+  border-radius: 50%;
+  border-left-color: white;
+
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0%{
+  transform: translate(23px, 4px) rotate(0deg);
+  }
+  100%{
+  transform: translate(23px, 4px) rotate(360deg);
+  } 
 }

@@ -23,7 +23,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light  navbar-custom">
       <div class="container-sm">
-        <a class="navbar-brand"
+        <a class="navbar-brand collapser"
           href="#"><img src="assets/imgs/iconos/logo-header.svg"
             class="logo-header"
             alt=""></a>
@@ -43,19 +43,19 @@
         <div class="collapse navbar-collapse flex-row-reverse "
           id="navbarTogglerDemo02">
           <ul class="navbar-nav text-center ">
-            <li class="nav-item">
+            <li class="nav-item collapser">
               <a class="nav-link"
                 href="#clientes">Clientes <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item collapser">
               <a class="nav-link"
                 href="#obras">Obras</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item collapser">
               <a class="nav-link"
                 href="#productos">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item collapser">
               <a class="nav-link"
                 href="#contacto">Contactos</a>
             </li>
@@ -67,11 +67,12 @@
   </header>
 
   <main>
-    <div class="jumbotron-fluid mobile h-100">
-      <div class="container pt-md-5">
-        <div class="row p-2 d-flex justify-content-around flex-lg-row-reverse">
-          <div class="col-lg-6 pt-2 d-flex justify-content-center justify-content-lg-end">
-            <img class="jumbotron-main-img img-fluid "
+    <div class="jumbotron-fluid mobile h-100"
+      style="overflow: hidden;">
+      <div class="container">
+        <div class="p-2 d-flex justify-content-around flex-lg-row-reverse pt-5 pt-md-2">
+          <div class="col col-lg-6 pt-2 d-flex justify-content-center justify-content-lg-end">
+            <img class="jumbotron-main-img img-md-fluid position-absolute position-md-static"
               src="assets/imgs/hero-image.png"
               alt="">
           </div>
@@ -82,7 +83,8 @@
                 de alto rendimiento. Este bloque debiera tener
                 sufieciente contenido para tres lineas de texto
               </p>
-              <button class="btn btn-success d-block d-lg-inline-block">Conozca nuestros productos</button>
+              <a href="#productos"><button class="btn btn-success d-block d-lg-inline-block">Conozca nuestros
+                  productos</button></a>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@
                 de
                 cañerías y accesorios de acero para la conducción de fluidos; desde diámetros DN 50mm hasta DN 3000mm.
               </p>
-              <a href=""
+              <a href="#productos"
                 class="card__link inline p-2">
                 <p class="d-inline pr-3">Nuestros Productos</p><img src="assets/imgs/iconos/arrow.png"
                   alt=""
@@ -120,7 +122,7 @@
                 conocimiento en el rubro nos permite ofrecerles en forma exclusiva, asistencia de preventa y postventa,
                 para
                 lograr la mejor solución a los requerimientos del cliente.</p>
-              <a href=""
+              <a href="#clientes"
                 class="card__link inline p-2">
                 <p class="d-inline pr-3">Nuestros Clientes</p><img src="assets/imgs/iconos/arrow.png"
                   alt=""
@@ -136,7 +138,7 @@
               <p class="card__description p-2 pt-4">Nuestra misión es brindar en forma proactiva soluciones de
                 ingeniería con alto
                 valor agregado, confiable y diseñadas al requerimiento de cada proyecto.</p><br><br><br>
-              <a href=""
+              <a href="#obras"
                 class="card__link inline p-2">
                 <p class="d-inline pr-3">Ver Proyectos</p><img src="assets/imgs/iconos/arrow.png"
                   alt=""
@@ -346,7 +348,7 @@
               src="./assets/imgs/logos/logo-redex.jpg"
               alt="First slide">
           </a>
-         
+
         </div>
         <div class="d-flex justify-content-around mb-5">
           <a href="">
@@ -369,11 +371,11 @@
               src="./assets/imgs/logos/logo-coop-cosquin.png"
               alt="Thirds slide">
           </a>
-            <a href="">
-              <img class="grid-logos"
+          <a href="">
+            <img class="grid-logos"
               src="./assets/imgs/logos/logo-coop-cruz.png"
               alt="Thirds slide">
-            </a>
+          </a>
         </div>
         <div class="d-flex justify-content-around mb-5">
           <a href="https://cosagltda.com/">
@@ -386,21 +388,22 @@
               src="./assets/imgs/logos/logo-cclip.jpg"
               alt="Thirds slide">
           </a>
-            <a href="https://www.cba.gov.ar/ministerio-de-agua-ambiente-y-servicios-publicos-3/">
-              <img class="grid-logos"
+          <a href="https://www.cba.gov.ar/ministerio-de-agua-ambiente-y-servicios-publicos-3/">
+            <img class="grid-logos"
               src="./assets/imgs/logos/logo-min-agua.png"
               alt="Thirds slide">
-            </a>
-            <a href="https://www.cba.gov.ar/concursos-publicos/concursos-tramo-personal-superior/ministerio-de-infraestructura/">
-              <img class="grid-logos"
+          </a>
+          <a
+            href="https://www.cba.gov.ar/concursos-publicos/concursos-tramo-personal-superior/ministerio-de-infraestructura/">
+            <img class="grid-logos"
               src="./assets/imgs/logos/logo-infra.png"
               alt="Thirds slide">
-            </a>
-            <a href="">
-              <img class="grid-logos"
+          </a>
+          <a href="">
+            <img class="grid-logos"
               src="./assets/imgs/logos/logo-install.png"
               alt="Thirds slide">
-            </a>
+          </a>
         </div>
         <div class="d-flex justify-content-around mb-5">
           <a href="http://www.adc.net.ar/">
@@ -413,11 +416,11 @@
               src="./assets/imgs/logos/logo-gieco.png"
               alt="Thirds slide">
           </a>
-            <a href="http://henisa.com/">
-              <img class="grid-logos"
+          <a href="http://henisa.com/">
+            <img class="grid-logos"
               src="./assets/imgs/logos/logo-henisa.png"
               alt="Thirds slide">
-            </a>
+          </a>
 
         </div>
       </div>
@@ -590,18 +593,18 @@
 
     </section>
     <section id="donde-estamos">
-      <div class="container-fluid formulario-contacto">
-
+      <div class="container-fluid formulario-contacto pt-3 pt-md-0">
         <div class="row flex-row-reverse container m-auto">
           <div class="col-md-6 p-4 card shadow rounded d-flex mt-md-n2 mb-md-n2">
             <h2 class="text-center text-md-left mb-2 mb-4"
               style="color: #006CA7">Contacto</h2>
-            <form class="" name="submit-to-google-sheet">
+            <form class=""
+              name="submit-to-google-sheet">
               <div class="form-group">
                 <label for="nombre"
                   style="color: gray">Nombre</label>
                 <input type="text"
-                name="nombre"
+                  name="nombre"
                   class="form-control"
                   id="nombre"
                   aria-describedby="nombre"
@@ -612,7 +615,7 @@
                 <label for="email"
                   style="color: gray">Email</label>
                 <input type="email"
-                name="email"
+                  name="email"
                   class="form-control"
                   id="email"
                   placeholder="Su email por favor"
@@ -622,13 +625,18 @@
                 <label for="mensaje"
                   style="color: gray">Mensaje</label>
                 <textarea class="form-control"
-                name="mensaje"
+                  name="mensaje"
                   id="mensaje"
                   rows="3"
                   style="color: gray"></textarea>
               </div>
-              <button type="submit"
-                class="btn btn-primary btn-block">Enviar!</button>
+              <button 
+                type="submit"
+                id="submit"
+                class="btn btn-primary btn-block"
+                
+                >Enviar! <span id="form-spinner"
+                  class="spinner-span"></span> </button>
             </form>
           </div>
           <a class="col-md-6  p-0"
@@ -691,8 +699,13 @@
         </div>
       </div>
 
-
     </footer>
+    <div id="confirmacion"
+      class="confirmacion">
+      <p id="message">mensaje.</p>
+      <button class="btn-primary"
+        onclick="handleModal()">Aceptar</button>
+    </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -706,15 +719,28 @@
   <script src="scripts.js"></script>
 
   <script>
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyvh82dsESxCZqr82t_EHpn6s2gmTzxKrzJT-2krZA3fVPl0klB/exec'
     const form = document.forms['submit-to-google-sheet']
-  
+    const submit = document.getElementById("submit")
+
     form.addEventListener('submit', e => {
+      const spinner = document.getElementById("form-spinner")
+      spinner.style = "display: inline-block"
       e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          console.log('Success!', response)
+          handleModal("success")
+          spinner.style = "display: none"
+        })
+        .catch(error => {
+          console.error('Error!', error.message)
+          handleModal("failure")
+        })
     })
+
+
   </script>
 </body>
 
