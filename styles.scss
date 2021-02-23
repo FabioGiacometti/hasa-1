@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cantarell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Work+Sans&display=swap");
 @import "_queries.scss";
 
 :root {
   --title: "Alfa Slab One", sans-serif;
-  --text: "Cantarell", sans-serif;
+  --text: "Work Sans", sans-serif;
   --slider-title: 28px;
   --azul-principal: #006ca7;
   --azul-secundario: #2e9ad5;
@@ -21,6 +21,7 @@ body {
   margin: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 .white {
@@ -333,7 +334,7 @@ footer {
   z-index: 999;
   top: 0;
   bottom: 0;
-  left: 100%;
+  left: 120%;
   right: 0;
   box-shadow:  0 0 34px 12px #00000050;
   font-size: 24px;
