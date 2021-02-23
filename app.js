@@ -1,4 +1,4 @@
-document.addEventListener( 'DOMContentLoaded', function () {
+/* document.addEventListener( 'DOMContentLoaded', function () {
 	new Splide( '.splide', {
         type   : 'loop',
         perPage: 3,
@@ -33,3 +33,4 @@ document.addEventListener( 'DOMContentLoaded', function () {
     }
           
 });
+ */

@@ -1,0 +1,115 @@
+
+@media (max-width: 375px) { 
+    .jumbotron-main-img {
+        max-height:80%;
+    }
+
+    #carousel-obras{
+        .container-lg{
+            padding:0px!important;
+            margin:0px;
+        }   
+    }
+}
+
+@media (max-width: 576px) { 
+  #obras{
+    .container-lg{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;        
+    }
+  }
+}
+
+
+
+@media (min-width: 990px) { 
+
+    
+
+    .jumbotron-fluid{
+        min-height: 80vh;
+        padding-bottom: 10rem;
+        padding-top:4rem;
+        background-color:#E0E0E0 ;
+        .jumbotron-panel{
+            
+            h1{
+                
+                color:#2E9AD5;
+
+            }
+            
+            p{
+                font-size: 24px;
+            }
+    
+            button{
+                padding:8px;
+                font-size:1rem;
+            }
+
+
+
+            .display-3{
+                font-size: 2.5rem;
+            }
+
+            .hero__description{
+                font-size: 1rem
+            }
+        }
+    }
+
+
+    #servicios{
+        .service-overlap{
+        margin-top: -118px!important;
+        article.card{
+            min-height: 483px;
+            }
+        }
+    }
+
+    #carousel-productos {
+        width: 50%!important;
+        margin:0 auto;
+        }
+
+
+
+        h3{
+            font-size:2.2rem;
+        }
+
+    }
+
+    #obras {
+        .carousel-item .overlay-container{
+            top: 30%;
+            bottom: 30px;
+            right: 90px;
+            left: 30px;
+            width: 50%;
+            height: 50%;
+            text-align: left;   
+        }
+
+        .carousel-item{
+            img{
+                max-height: 80vh;
+                width: 100vw;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+
+     
+
+
+
+    
+ 
