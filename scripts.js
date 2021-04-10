@@ -79,6 +79,11 @@ $("#carousel-obras").carousel({
   interval: 3200,
 });
 
+$("#carousel-hero").carousel({
+  interval: 3200,
+});
+
+
 const navLinks = document.querySelectorAll(".collapser");
 const menuToggle = document.getElementById("navbarTogglerDemo02");
 const bsCollapse = new bootstrap.Collapse(menuToggle);
