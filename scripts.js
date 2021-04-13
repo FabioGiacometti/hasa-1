@@ -84,14 +84,6 @@ $("#carousel-hero").carousel({
 });
 
 
-const navLinks = document.querySelectorAll(".collapser");
-const menuToggle = document.getElementById("navbarTogglerDemo02");
-const bsCollapse = new bootstrap.Collapse(menuToggle);
-navLinks.forEach((l) => {
-  l.addEventListener("click", () => {
-    bsCollapse.toggle();
-  });
-});
 
 let isModalVisible = false;
 let isSpinnerVisible = false;
