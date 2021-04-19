@@ -178,16 +178,36 @@ const obras = [
 //     </div>`)
 // );
 
-const carouselSlide = (obras) => {
-  let arr = []
-  for (let i = 0; i < obras.length; i++) {
-    for (let j = 0; j < obras[i].images.length; j++) {
-      arr.push(i);
+const carouselSlide = (array) => {
+  let arr = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array[i].images.length; j++) {
+      if (j === 0) {
+        arr.push(`<div class="carousel-item" id="${ i.toString() + j.toString()}">
+           <div class="overlay-container">
+             <span class="overlay-item">
+               <h6>Obra: ${array[i].title}</h6>
+               <p>Obra provista y asesorada por Hasa S.A.</p>
+             </span>
+           </div>
+            <img class="item"
+              src="./assets/imgs/obras/${array[i].images[j]}"
+             alt="Imagen de obra en${array[i].title}">
+         </div>`);
+      } else {
+        arr.push(`<div class="carousel-item">
+         <img class="item"
+                      src="./assets/imgs/obras/${array[i].images[j]}"
+                      alt="Imagen de obra en ${array[i].title}">
+                  </div>`);
+      }
     }
   }
-  return arr
+  return arr;
 };
 
-const insertSlider = () => document.getElementById("obras-images").innerHTML = carouselSlide().join(" ");
+const insertSlider = () =>{
+  (document.getElementById("obras-images").innerHTML = carouselSlide(obras).join(" "))
+document.getElementById("00").classList.add("active")};
 
 insertSlider();
