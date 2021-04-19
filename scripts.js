@@ -83,6 +83,7 @@ $("#carousel-hero").carousel({
   interval: 3200,
 });
 
+//mobile menu fix
 const navLinks = document.querySelectorAll(".collapser");
 const menuToggle = document.getElementById("navbarTogglerDemo02");
 const bsCollapse = new bootstrap.Collapse(menuToggle);
