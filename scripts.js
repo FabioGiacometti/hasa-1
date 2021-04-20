@@ -178,36 +178,74 @@ const obras = [
 //     </div>`)
 // );
 
-const carouselSlide = (array) => {
+// const carouselSlide = (array) => {
+//   let arr = [];
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = 0; j < array[i].images.length; j++) {
+//       if (j === 0) {
+//         arr.push(`<div class="carousel-item" id="${ i.toString() + j.toString()}">
+//            <div class="overlay-container">
+//              <span class="overlay-item">
+//                <h6>Obra: ${array[i].title}</h6>
+//                <p>Obra provista y asesorada por Hasa S.A.</p>
+//              </span>
+//            </div>
+//             <img class="item"
+//               src="./assets/imgs/obras/${array[i].images[j]}"
+//              alt="Imagen de obra en${array[i].title}">
+//          </div>`);
+//       } else {
+//         arr.push(`<div class="carousel-item">
+//          <img class="item"
+//                       src="./assets/imgs/obras/${array[i].images[j]}"
+//                       alt="Imagen de obra en ${array[i].title}">
+//                   </div>`);
+//       }
+//     }
+//   }
+//   return arr;
+// };
+
+
+const slideGenerator = (array) => {
   let arr = [];
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < array[i].images.length; j++) {
-      if (j === 0) {
-        arr.push(`<div class="carousel-item" id="${ i.toString() + j.toString()}">
-           <div class="overlay-container">
+      
+        arr.push(
+          `<div 
+            class="swiper-slide" id="${ i.toString() + j.toString()}" 
+            style='
+              height: 80vh;
+              background-size: cover;'
+              title='Obra: "${array[i].title}"'>
+              ${ j == 0 ? `<span class="overlay-container">
              <span class="overlay-item">
-               <h6>Obra: ${array[i].title}</h6>
-               <p>Obra provista y asesorada por Hasa S.A.</p>
-             </span>
-           </div>
-            <img class="item"
-              src="./assets/imgs/obras/${array[i].images[j]}"
-             alt="Imagen de obra en${array[i].title}">
-         </div>`);
-      } else {
-        arr.push(`<div class="carousel-item">
-         <img class="item"
-                      src="./assets/imgs/obras/${array[i].images[j]}"
-                      alt="Imagen de obra en ${array[i].title}">
-                  </div>`);
+                <h6> Obra: "${array[i].title}" 
+                </h6>
+                <ul>
+                <li>Cliente: Nombre del cliente </li>
+                <li>Modalidad: Proveedor / Contratista </li>
+                <li>Monto: $50.000.000 </li>
+                <li>Periodo: Desde 2/2020 al 3/2021 </li>
+                </ul>
+              </span>
+            </span>`: ""}
+
+              <img src="./assets/imgs/obras/${array[i].images[j]}" class="swiper-img"/>
+          
+          </div>`
+        )  
       }
     }
-  }
   return arr;
 };
 
-const insertSlider = () =>{
-  (document.getElementById("obras-images").innerHTML = carouselSlide(obras).join(" "))
-document.getElementById("00").classList.add("active")};
+const insertSlider = () => {
+  (document.getElementById("obras-images").innerHTML = slideGenerator(obras).join(" "))
+// document.getElementById("00").classList.add("active")
+};
 
 insertSlider();
+
+

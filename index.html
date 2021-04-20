@@ -12,7 +12,7 @@
     href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/styles/css/burgers.css">
-  <style>html{scroll-behavior: smooth;}</style>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -63,31 +63,7 @@
     </nav>
   </header>
 
-  <main>
-    <!-- <div class="jumbotron-fluid mobile h-100"
-      style="overflow: hidden;">
-      <div class="container">
-        <div class="p-2 d-flex justify-content-around flex-lg-row-reverse pt-5 pt-md-2">
-          <div class="col col-lg-6 pt-2 d-flex justify-content-center justify-content-lg-end">
-            <img class="jumbotron-main-img img-md-fluid position-absolute position-md-static"
-              src="assets/imgs/hero_-image.png"
-              alt="">
-          </div>
-          <div class="col-lg-6 d-flex-row d-flex align-items-center p-lg-4">
-            <div class="jumbotron-panel ">
-              <h1 class="display-3 pt-2 pt-4 ">Conducción de calidad para fluidos desde 1992</h1>
-              <p class="hero__description pb-2 w-80 pr-md-5">Fabricación e instalación de tubos y caños
-                de alto rendimiento. Este bloque debiera tener
-                sufieciente contenido para tres lineas de texto
-              </p>
-              <a href="#productos"><button class="btn btn-success d-block d-lg-inline-block">Conozca nuestros
-                  productos</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    
+  <main>    
     <section id="hero"
       class="align-items-center align-items-lg-center d-flex flex-column " style="max-height: 100vh; overflow: hidden;">
         <div class="container position-absolute" style="top: 20vh;">
@@ -107,7 +83,7 @@
 
       </div>
       <div id="carousel-hero"
-        class="carousel slide"
+        class="carousel slide" style="max-width: 1980px; width: 100%; max-height: 930px;"
         data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -131,22 +107,22 @@
               alt="Thirds slide">
           </div>
           
-        <a class="carousel-control-prev"
-          href="#carousel-hero"
-          role="button"
-          data-slide="prev">
-          <span class="carousel-control-prev-icon"
-            aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next"
-          href="#carousel-hero"
-          role="button"
-          data-slide="next">
-          <span class="carousel-control-next-icon"
-            aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+          <a class="carousel-control-prev"
+            href="#carousel-hero"
+            role="button"
+            data-slide="prev">
+            <span class="carousel-control-prev-icon"
+              aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next"
+            href="#carousel-hero"
+            role="button"
+            data-slide="next">
+            <span class="carousel-control-next-icon"
+              aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
       </div>
 
     </section>
@@ -211,6 +187,7 @@
         </div>
       </div>
     </section>
+    
     <section class="productos"
       id="productos">
       <div class="">
@@ -576,38 +553,31 @@
         </div>
       </div>
     </section>
-    <section id="obras"
+     
+    <!-- <section id="obras"
       class="align-items-center align-items-lg-center d-flex flex-column">
-      <h2 class="text-white pt-5 pb-4 container">Obras</h2>
-      <div id="carousel-obras"
-        class="carousel slide container pb-5"
-        data-ride="carousel">
-        <div class="carousel-inner" id="obras-images">
-          
+      
+     
+      <div class="swiper-container">
+        <div class="swiper-wrapper"  id="obras-images">
         </div>
-        <a class="carousel-control-prev"
-          href="#carousel-obras"
-          role="button"
-          data-slide="prev">
-          <span class="carousel-control-prev-icon"
-            aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next"
-          href="#carousel-obras"
-          role="button"
-          data-slide="next">
-          <span class="carousel-control-next-icon"
-            aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="swiper-pagination"></div>
       </div>
+    </section> -->
 
+    <section id="obras">
+      <h2 class="text-white pt-5 pb-4 container">Obras</h2>
+      <div class="swiper-container container">
+        <div class="swiper-wrapper"  id="obras-images">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
+
     <section id="donde-estamos">
       <div class="container-fluid formulario-contacto pt-3 pt-md-0">
         <div class="row flex-row-reverse container m-auto">
-          <div class="col-md-6 p-4 card shadow rounded d-flex mt-md-n2 mb-md-n2">
+          <div class="col-md-6 p-4 card shadow rounded d-flex mt-md-n2 mb-md-n2" style="z-index: 2">
             <h2 class="text-center text-md-left mb-2 mb-4"
               style="color: #006CA7">Contacto</h2>
             <form class=""
@@ -744,6 +714,7 @@
   })
 
 </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -781,6 +752,16 @@
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.1/anime.min.js" integrity="sha512-JnLGXVd29EKNwUvF+ayNuuYOLlfjmnW1BwDdTCQ1fMkmomQeU9kORwOjmcTYR2JYakPaJTLtzTz6txouKDNFdg==" crossorigin="anonymous"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>

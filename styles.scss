@@ -145,42 +145,30 @@ article.card {
 
 #obras {
   background-color: var(--azul-principal);
+  padding-bottom: 50px;
+  .overlay-container {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    left: 5vw;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .overlay-item {
+      padding: 50px;
+      text-align: left;
+      h6 {
+        font-size: 28px;
+        padding-bottom: 0px;
+        color: var(--azul-principal);
+        font-size: var(--slider-title);
+      }
 
-  .carousel-item {
-    img {
-      // max-height: 80vh;
-      min-height: 500px;
-      width: 100vw;
-      object-fit: cover;
-    }
-    .overlay-container {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.8);
-      width: 100%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      color: white;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      .overlay-item {
-        width: 80%;
-
-        h6 {
-          font-size: 28px;
-          padding-bottom: 20px;
-          color: var(--azul-principal);
-          font-size: var(--slider-title);
-        }
-
-        p {
-          color: var(--azul-secundario);
-          font-size: 18px;
-        }
+      p {
+        // color: var(--azul-secundario);
+        // font-size: 18px;
       }
     }
   }
@@ -310,7 +298,7 @@ footer {
     .carousel-item {
       img {
         max-height: 80vh;
-        width: 100vw;
+        // width: 100vw;
         object-fit: cover;
       }
     }
@@ -493,7 +481,7 @@ footer {
     opacity: 0;
   }
 }
-.product-image:hover > .product-overlay{
+.product-image:hover > .product-overlay {
   bottom: 0;
   opacity: 1;
 }
@@ -509,4 +497,52 @@ footer {
 }
 .four {
   background-image: url("../assets/imgs/productos/pieza-especial-4.jpg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  max-width: min-content;
+  max-height: 100vh;
+  position: relative;
+  min-width: 50vw;
+  /* object-fit: cover; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+.swiper-img {
+height: 100%;
+min-width: 100%;
+object-fit: cover;
 }
