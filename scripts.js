@@ -83,14 +83,14 @@ $("#carousel-hero").carousel({
   interval: 3200,
 });
 
-const navLinks = document.querySelectorAll(".collapser");
-const menuToggle = document.getElementById("navbarTogglerDemo02");
-const bsCollapse = new bootstrap.Collapse(menuToggle);
-navLinks.forEach((l) => {
-  l.addEventListener("click", () => {
-    bsCollapse.toggle();
-  });
-});
+// const navLinks = document.querySelectorAll(".collapser");
+// const menuToggle = document.getElementById("navbarTogglerDemo02");
+// const bsCollapse = new bootstrap.Collapse(menuToggle);
+// navLinks.forEach((l) => {
+//   l.addEventListener("click", () => {
+//     bsCollapse.toggle();
+//   });
+// });
 
 let isModalVisible = false;
 let isSpinnerVisible = false;
@@ -108,144 +108,5 @@ function handleModal(status) {
     : modal.classList.remove("center");
   isModalVisible = !isModalVisible;
 }
-
-// listado de obras
-const obras = [
-  {
-    active: true,
-    title: "Alberdi",
-    images: [
-      "alberdi(1).jpg",
-      "alberdi(2).jpg",
-      "alberdi(3).jpg",
-      "alberdi(4).jpg",
-    ],
-  },
-  {
-    title: "Los Cedros",
-    images: ["cedros(1).jpg", "cedros(2).jpg", "cedros(3).jpg"],
-  },
-  {
-    title: "Plaza España",
-    images: [
-      "plaza_espana(1).jpg",
-      "plaza_espana(2).jpg",
-      "plaza_espana(3).jpg",
-    ],
-  },
-  {
-    title: "Sin Nombre",
-    images: ["sin_nombre(1).jpg", "sin_nombre(2).jpg", "sin_nombre(3).jpg"],
-  },
-  {
-    title: "Suquia",
-    images: [
-      "suquia(1).jpg",
-      "suquia(2).jpg",
-      "suquia(3).jpg",
-      "suquia(4).jpg",
-      "suquia(5).jpg",
-      "suquia(6).jpg",
-    ],
-  },
-  {
-    title: "Tropezon",
-    images: [
-      "tropezon(1).jpg",
-      "tropezon(2).jpg",
-      "tropezon(3).jpg",
-      "tropezon(4).jpg",
-    ],
-  },
-];
-
-// Item del carrusel
-// const carouselSlide = obras.map((obra) =>
-
-// obra.images.map( (imagen, index)=>
-//   `<div class="carousel-item">
-//       ${index === 0 ? `<div class="overlay-container">
-//         <span class="overlay-item">
-//           <h6>Obra: ${index}</h6>
-//           <p>Obra provista y asesorada por Hasa S.A.</p>
-//         </span>
-//       </div>`
-//           : null
-//       }
-//       <img class="item"
-//         src="./assets/imgs/obras/${imagen}"
-//         alt="${imagen}">
-//     </div>`)
-// );
-
-// const carouselSlide = (array) => {
-//   let arr = [];
-//   for (let i = 0; i < array.length; i++) {
-//     for (let j = 0; j < array[i].images.length; j++) {
-//       if (j === 0) {
-//         arr.push(`<div class="carousel-item" id="${ i.toString() + j.toString()}">
-//            <div class="overlay-container">
-//              <span class="overlay-item">
-//                <h6>Obra: ${array[i].title}</h6>
-//                <p>Obra provista y asesorada por Hasa S.A.</p>
-//              </span>
-//            </div>
-//             <img class="item"
-//               src="./assets/imgs/obras/${array[i].images[j]}"
-//              alt="Imagen de obra en${array[i].title}">
-//          </div>`);
-//       } else {
-//         arr.push(`<div class="carousel-item">
-//          <img class="item"
-//                       src="./assets/imgs/obras/${array[i].images[j]}"
-//                       alt="Imagen de obra en ${array[i].title}">
-//                   </div>`);
-//       }
-//     }
-//   }
-//   return arr;
-// };
-
-
-const slideGenerator = (array) => {
-  let arr = [];
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array[i].images.length; j++) {
-      
-        arr.push(
-          `<div 
-            class="swiper-slide" id="${ i.toString() + j.toString()}" 
-            style='
-              height: 80vh;
-              background-size: cover;'
-              title='Obra: "${array[i].title}"'>
-              ${ j == 0 ? `<span class="overlay-container">
-             <span class="overlay-item">
-                <h6> Obra: "${array[i].title}" 
-                </h6>
-                <ul>
-                <li>Cliente: Nombre del cliente </li>
-                <li>Modalidad: Proveedor / Contratista </li>
-                <li>Monto: $50.000.000 </li>
-                <li>Periodo: Desde 2/2020 al 3/2021 </li>
-                </ul>
-              </span>
-            </span>`: ""}
-
-              <img src="./assets/imgs/obras/${array[i].images[j]}" class="swiper-img"/>
-          
-          </div>`
-        )  
-      }
-    }
-  return arr;
-};
-
-const insertSlider = () => {
-  (document.getElementById("obras-images").innerHTML = slideGenerator(obras).join(" "))
-// document.getElementById("00").classList.add("active")
-};
-
-insertSlider();
 
 
