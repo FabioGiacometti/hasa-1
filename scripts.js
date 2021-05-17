@@ -72,7 +72,7 @@ $("carousel-productos").carousel({
 });
 
 $("#carousel-logo").carousel({
-  interval: 500,
+  interval: 2000,
 });
 
 $("#carousel-obras").carousel({

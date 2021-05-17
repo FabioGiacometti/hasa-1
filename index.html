@@ -203,76 +203,30 @@
 
     </section>
     <section id="clientes"
-      class="container-md">
-      <h2 class="mt-5 pt-4 p-4 pb-0">Clientes que confian en nosotros</h2>
-      <div class="d-none d-lg-block">
+      class="container-md text-center">
+      <h2 class="mt-5 pt-4 p-4 pb-0">Clientes que confían en nosotros</h2>
+      <div class="d-none d-md-block">
 
         <div class="d-flex justify-content-center mb-5" style="flex-wrap: wrap;" id="clients-container">
          
         </div>
       </div>
-      </div>
-
+      
       <!-- Mobile Clients carousel -->
 
-      <div id="carousel-logo"
-        class="carousel slide d-lg-none"
-        data-ride="carousel">
-        <div class="carousel-inner" id="clients-carousel">
-          <!-- <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"></li>
-            <li data-target="#carouselExampleIndicators"
-              data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators"
-              data-slide-to="2"></li>
-          </ol> -->
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center">
-              <img
-                src="./assets/imgs/clients/logo-aguas.jpg"
-                alt="First slide">
-             
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img
-              src="./assets/imgs/clients/logo-carlos-paz.png"
-              alt="Second slide">
-           
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img 
-                src="./assets/imgs/clients/logo-michelotti.jpg"
-                alt="Thirds slide">
-          
-            </div>
-          </div>
-          <div class="carousel-item  p-md-5">
-            <div class="d-flex justify-content-center">
-              <img
-                src="./assets/imgs/clients/logo-install.png"
-                alt="Thirds slide">
-         
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img class="m-2"
-                src="./assets/imgs/clients/logo-marinelli.jpg">
+      <div id="desktop-logos-carousel" class="col d-block d-md-none">
+        <div class="swiper-container container" id="logo-carousel">
+        <div class="swiper-wrapper"  id="logos-images">
         
-            </div>
-          </div>
         </div>
+        <div class="swiper-pagination"></div>
+       </div>
       </div>
+
     </section>
      
     <section id="obras">
-      <h2 class="text-white pt-5 pb-4 container">Obras</h2>
+      <h2 class="text-white pt-5 pb-4 container text-center">Obras</h2>
       <div class="swiper-container container" id="obras-swiper">
         <div class="swiper-wrapper"  id="obras-images">
         </div>
@@ -352,14 +306,14 @@
   <script src="donde-estamos.js"></script>
   <script src="form.js"></script>
   <script>
-    // var swiper = new Swiper('.swiper-container', {
-    //   slidesPerView: 1,
-    //   spaceBetween: 30,
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
-    // });
+    var swiper3 = new Swiper('#logo-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
 
     var swiper = new Swiper('#obras-swiper', {
       slidesPerView: 1,

@@ -135,37 +135,60 @@ const clients = [
     return arr.join(" ")
   }
   
-  const clientSliderGenerator = (array) => {
-    let arr = []
-    for(let i = 0; i < array.length; i++){
-      arr.push(`
-      <div class="carousel-item ${i == 0 ? "active" : ""}">
-      <div class="d-flex justify-content-center">
-       <a href="${array[i].url}" target="_blank">
-        <img
-        src="${array[i].image}"
-        alt="${array[i].name}"
-        title="${array[i].name}">
-                 </a>
-      </div>
-      </div>
+  // const clientSliderGenerator = (array) => {
+  //   let arr = []
+  //   for(let i = 0; i < array.length; i++){
+  //     arr.push(`
+  //     <div class="carousel-item ${i == 0 ? "active" : ""}">
+  //     <div class="d-flex justify-content-center">
+  //      <a href="${array[i].url}" target="_blank">
+  //       <img
+  //       src="${array[i].image}"
+  //       alt="${array[i].name}"
+  //       title="${array[i].name}">
+  //                </a>
+  //     </div>
+  //     </div>
       
-      `)
-    }
-    return `
-    <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators"
-      data-slide-to="0"
-      class="active"></li>
-    <li data-target="#carouselExampleIndicators"
-      data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators"
-      data-slide-to="2"></li>
-  </ol>
-  ${arr.join(" ")}`
-  }
+  //     `)
+  //   }
+  //   return `
+  //   <ol class="carousel-indicators">
+  //   <li data-target="#carouselExampleIndicators"
+  //     data-slide-to="0"
+  //     class="active"></li>
+  //   <li data-target="#carouselExampleIndicators"
+  //     data-slide-to="1"></li>
+  //   <li data-target="#carouselExampleIndicators"
+  //     data-slide-to="2"></li>
+  // </ol>
+  // ${arr.join(" ")}`
+  // }
   
   const clientGrid = document.getElementById("clients-container")
-  const clientsCarousel = document.getElementById("clients-carousel")
+  // const clientsCarousel = document.getElementById("clients-carousel")
   clientGrid.innerHTML = clientGridGenerator(clients)
-  clientsCarousel.innerHTML = clientSliderGenerator(clients)
+  // clientsCarousel.innerHTML = clientSliderGenerator(clients)
+
+  const clientSliderGenerator = (data) => {
+    return `
+        <a href="${data.url}" target="_blank" class="swiper-slide product-slide">
+        <img src="${data.image}" class="product-image">
+        <span class="product-overlay">
+           <p class="product-overlay__title">${data.name}</p>
+        </span>
+        </div>
+    `
+}
+
+const logoCarousel = document.getElementById("logos-images")
+
+
+const logoCarouselGenerator = (data) => {
+  let arr = []
+  for(let i = 0; i < data.length; i++){
+      arr.push(clientSliderGenerator(data[i]))
+  }
+  return arr.join(" ")
+}
+logoCarousel.innerHTML = logoCarouselGenerator(clients)

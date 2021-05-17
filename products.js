@@ -86,7 +86,7 @@ var showMoreBtn = document.getElementById('show-more-btn');
 const productListContainer = document.getElementById('product-list-container').offsetHeight
 
 showMoreBtn.addEventListener('click',function(){
-container.style.height = !containerStatus ? productListContainer + 70 + "px" : "52px"
+container.style.height = !containerStatus ? productListContainer + 90 + "px" : "52px"
 containerStatus = !containerStatus
 showMoreBtn.innerText = containerStatus ? "- ESCONDER LISTA DE PRODUCTOS" : "+ MOSTRAR LISTA DE PRODUCTOS"
 })
