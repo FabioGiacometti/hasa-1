@@ -553,10 +553,7 @@ footer .site-map a {
 }
 
 .productos .product__items {
-  padding-top: 1.5rem;
   color: white;
-  min-height: 260px;
-  padding-left: 15px;
 }
 
 .mobile-product-image {
@@ -599,25 +596,9 @@ footer .site-map a {
   opacity: 0;
 }
 
-.product-image:hover > .product-overlay {
+.product-slide:hover > .product-overlay {
   bottom: 0;
   opacity: 1;
-}
-
-.one {
-  background-image: url("../assets/imgs/productos/Manifold con doble salida tangencial.jpg");
-}
-
-.two {
-  background-image: url("../assets/imgs/productos/Junta conexion simple buloneria.jpg");
-}
-
-.three {
-  background-image: url("../assets/imgs/productos/Junta de desmontaje autoportante.jpg");
-}
-
-.four {
-  background-image: url("../assets/imgs/productos/pieza-especial-4.jpg");
 }
 
 html {
@@ -670,5 +651,36 @@ html {
   opacity: 1;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+.show-product-List {
+  height: 46px;
+  padding-top: 20px;
+  overflow: hidden;
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.expand {
+  height: 300px;
+  padding-top: 20px;
+}
+
+#show-more-btn {
+  text-align: center;
+  display: block;
+  font-family: var(--title);
+  color: white;
+  background-color: var(--azul-principal);
+  width: auto;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 0 20px 7px;
+}
+
+.more-prods {
+  position: relative;
+  bottom: -20px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -58,7 +58,7 @@ const product = (data) => {
         <div class="swiper-slide product-slide">
         <img src="${data.image}" class="product-image">
         <span class="product-overlay">
-           <p class="product-overlay__title">Pieza tanto</p>
+           <p class="product-overlay__title">${data.name}</p>
         </span>
         </div>
     `
@@ -79,3 +79,15 @@ const productCarouselGenerator = (data) => {
 
 
 productCarousel.innerHTML = productCarouselGenerator(products)
+
+let containerStatus = false
+var container = document.getElementById("show-product-container");
+var showMoreBtn = document.getElementById('show-more-btn');
+const productListContainer = document.getElementById('product-list-container').offsetHeight
+
+showMoreBtn.addEventListener('click',function(){
+container.style.height = !containerStatus ? productListContainer + 70 + "px" : "52px"
+containerStatus = !containerStatus
+showMoreBtn.innerText = containerStatus ? "- ESCONDER LISTA DE PRODUCTOS" : "+ MOSTRAR LISTA DE PRODUCTOS"
+})
+

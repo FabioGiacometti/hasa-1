@@ -109,4 +109,3 @@ function handleModal(status) {
   isModalVisible = !isModalVisible;
 }
 
-
