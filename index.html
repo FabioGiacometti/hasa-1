@@ -212,7 +212,12 @@
         <div class="container d-none d-md-block">
           <div class="row">
             <div class="col" id="desktop-products-carousel">
-             
+              <div class="swiper-container container" id="products-swiper">
+              <div class="swiper-wrapper"  id="products-images">
+              
+              </div>
+              <div class="swiper-pagination"></div>
+             </div>
             </div>
           </div>
           <div class="row">
@@ -337,7 +342,7 @@
      
     <section id="obras">
       <h2 class="text-white pt-5 pb-4 container">Obras</h2>
-      <div class="swiper-container container">
+      <div class="swiper-container container" id="obras-swiper">
         <div class="swiper-wrapper"  id="obras-images">
         </div>
         <div class="swiper-pagination"></div>
@@ -416,7 +421,16 @@
   <script src="donde-estamos.js"></script>
   <script src="form.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    // var swiper = new Swiper('.swiper-container', {
+    //   slidesPerView: 1,
+    //   spaceBetween: 30,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    // });
+
+    var swiper = new Swiper('#obras-swiper', {
       slidesPerView: 1,
       spaceBetween: 30,
       pagination: {
@@ -424,6 +438,15 @@
         clickable: true,
       },
     });
+
+    var swiper2 = new Swiper('#products-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })
   </script>
 
 </body>

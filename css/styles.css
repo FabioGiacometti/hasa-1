@@ -632,14 +632,6 @@ html {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  max-height: 100vh;
-  position: relative;
-  min-width: 50vw;
-  /* object-fit: cover; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,15 +642,6 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 40%;
 }
 
 .swiper-img {

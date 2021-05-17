@@ -1,62 +1,81 @@
 const products = [
     {
-      image: "./assets/imgs/products/product_(1).jpg",
-      name: "Producto1",
+      image: "./assets/imgs/productos/product_(1).png",
+      name: "Carretel reduccion - ramal Te - ramal Y - Curva 90º",
     },
     {
-      image: "./assets/imgs/products/product_(2).jpg",
-      name: "Producto2",
+      image: "./assets/imgs/productos/product_(2).png",
+      name: "Conexion reduccion amplia tolerancia",
     },
     {
-      image: "./assets/imgs/products/product_(3).jpg",
-      name: "Producto3",
+      image: "./assets/imgs/productos/product_(3).png",
+      name: "Curva manifold",
     },
     {
-      image: "./assets/imgs/products/product_(4).jpg",
-      name: "Producto4",
+      image: "./assets/imgs/productos/product_(4).png",
+      name: "Junta conexión doble buloneria",
     },
     {
-      image: "./assets/imgs/products/product_(5).jpg",
-      name: "Producto5",
+      image: "./assets/imgs/productos/product_(5).png",
+      name: "Junta conexion simple buloneria",
     },
     {
-      image: "./assets/imgs/products/product_(6).jpg",
-      name: "Producto6",
+      image: "./assets/imgs/productos/product_(6).png",
+      name: "Junta de desmontaje autoportante",
     },
     {
-      image: "./assets/imgs/products/product_(7).jpg",
-      name: "Producto7",
+      image: "./assets/imgs/productos/product_(7).png",
+      name: "Manifold con doble salida tangencial",
     },
     {
-      image: "./assets/imgs/products/product_(8).jpg",
-      name: "Producto8",
+      image: "./assets/imgs/productos/product_(8).png",
+      name: "Ramal cruz reduccion con curvas",
     },
     {
-      image: "./assets/imgs/products/product_(9).jpeg",
-      name: "Producto9",
-    },
+      image: "./assets/imgs/productos/product_(9).png",
+      name: "Ramal tangencial con doble salida y curva al final",
+    },    
+    {
+    image: "./assets/imgs/productos/product_(10).png",
+    name: "Ramal Y",
+    },  
+    {
+    image: "./assets/imgs/productos/product_(11).png",
+    name: "Reducciones unidas por una valvula",
+    },  
+    {
+    image: "./assets/imgs/productos/product_(12).png",
+    name: "Tambor de reparación",
+    },  
+    {
+    image: "./assets/imgs/productos/product_(13).png",
+    name: "Pieza especial, consultar",
+    }
   ];
 
 const product = (data) => {
     return `
-    <div class="w-100 product-image one">
-        <img src="${data.image}">
+        <div class="swiper-slide product-slide">
+        <img src="${data.image}" class="product-image">
         <span class="product-overlay">
            <p class="product-overlay__title">Pieza tanto</p>
         </span>
-     </div>
+        </div>
     `
 }
+const productCarousel = document.getElementById("products-images")
 
 const productCarouselGenerator = (data) => {
-    const arr = []
+    let arr = []
     for(let i = 0; i < products.length; i++){
+        // const slide = document.createElement("div");
+        // slide.classList.add("w-100");
+        // slide.innerHTML = product(data[i])
+        // productCarousel.appendChild(slide)
         arr.push(product(data[i]))
     }
-    console.log(arr)
     return arr.join(" ")
 }
 
-const productCarousel = document.getElementById("desktop-products-carousel")
-const 
-productCarouselGenerator(products)
+
+productCarousel.innerHTML = productCarouselGenerator(products)
