@@ -50,8 +50,14 @@ const products = [
     {
     image: "./assets/imgs/productos/product_(13).png",
     name: "Pieza especial, consultar",
-    }
-  ];
+  }
+];
+
+var container = document.getElementById("show-product-container");
+var showMoreBtn = document.getElementById('show-more-btn');
+const productCarousel = document.getElementById("products-images")
+let containerStatus = false
+const productListContainer = document.getElementById('product-list-container').offsetHeight
 
 const product = (data) => {
     return `
@@ -63,31 +69,19 @@ const product = (data) => {
         </div>
     `
 }
-const productCarousel = document.getElementById("products-images")
+
+showMoreBtn.addEventListener('click',function(){
+  container.style.height = !containerStatus ? productListContainer + 90 + "px" : "52px"
+  containerStatus = !containerStatus
+  showMoreBtn.innerText = containerStatus ? "- ESCONDER LISTA DE PRODUCTOS" : "+ MOSTRAR LISTA DE PRODUCTOS"
+})
 
 const productCarouselGenerator = (data) => {
     let arr = []
     for(let i = 0; i < products.length; i++){
-        // const slide = document.createElement("div");
-        // slide.classList.add("w-100");
-        // slide.innerHTML = product(data[i])
-        // productCarousel.appendChild(slide)
         arr.push(product(data[i]))
     }
     return arr.join(" ")
 }
 
-
 productCarousel.innerHTML = productCarouselGenerator(products)
-
-let containerStatus = false
-var container = document.getElementById("show-product-container");
-var showMoreBtn = document.getElementById('show-more-btn');
-const productListContainer = document.getElementById('product-list-container').offsetHeight
-
-showMoreBtn.addEventListener('click',function(){
-container.style.height = !containerStatus ? productListContainer + 90 + "px" : "52px"
-containerStatus = !containerStatus
-showMoreBtn.innerText = containerStatus ? "- ESCONDER LISTA DE PRODUCTOS" : "+ MOSTRAR LISTA DE PRODUCTOS"
-})
-

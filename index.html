@@ -309,10 +309,12 @@
     var swiper3 = new Swiper('#logo-carousel', {
       slidesPerView: 1,
       spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+      pagination: false, 
+      navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
     });
 
     var swiper = new Swiper('#obras-swiper', {
