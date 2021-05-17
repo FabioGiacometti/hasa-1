@@ -435,12 +435,6 @@ footer .site-map a {
   transition: all 200ms;
 }
 
-.grid-logos:hover {
-  opacity: 1;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-}
-
 .confirmacion {
   margin: auto;
   position: fixed;
@@ -611,15 +605,15 @@ footer .site-map a {
 }
 
 .one {
-  background-image: url("../assets/imgs/productos/pieza-especial.jpg");
+  background-image: url("../assets/imgs/productos/Manifold con doble salida tangencial.jpg");
 }
 
 .two {
-  background-image: url("../assets/imgs/productos/pieza-especial-5.jpg");
+  background-image: url("../assets/imgs/productos/Junta conexion simple buloneria.jpg");
 }
 
 .three {
-  background-image: url("../assets/imgs/productos/pieza-especial-3.jpg");
+  background-image: url("../assets/imgs/productos/Junta de desmontaje autoportante.jpg");
 }
 
 .four {
@@ -638,14 +632,6 @@ html {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  max-width: -webkit-min-content;
-  max-width: -moz-min-content;
-  max-width: min-content;
-  max-height: 100vh;
-  position: relative;
-  min-width: 50vw;
-  /* object-fit: cover; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,15 +642,6 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 40%;
 }
 
 .swiper-img {
@@ -672,5 +649,26 @@ html {
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.clients-card {
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: -webkit-box-shadow 300ms;
+  transition: -webkit-box-shadow 300ms;
+  transition: box-shadow 300ms;
+  transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+}
+
+.clients-card:hover {
+  -webkit-box-shadow: 0px 5px 15px 0px #00000050;
+          box-shadow: 0px 5px 15px 0px #00000050;
+}
+
+.clients-card:hover .grid-logos {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 /*# sourceMappingURL=styles.css.map */

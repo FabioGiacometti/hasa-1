@@ -345,10 +345,6 @@ footer {
   filter: grayscale(0.5);
   opacity: 0.5;
   transition: all 200ms;
-  &:hover {
-    opacity: 1;
-    filter: grayscale(0);
-  }
 }
 
 .confirmacion {
@@ -487,13 +483,13 @@ footer {
 }
 
 .one {
-  background-image: url("../assets/imgs/productos/pieza-especial.jpg");
+  background-image: url("../assets/imgs/productos/Manifold con doble salida tangencial.jpg");
 }
 .two {
-  background-image: url("../assets/imgs/productos/pieza-especial-5.jpg");
+  background-image: url("../assets/imgs/productos/Junta conexion simple buloneria.jpg");
 }
 .three {
-  background-image: url("../assets/imgs/productos/pieza-especial-3.jpg");
+  background-image: url("../assets/imgs/productos/Junta de desmontaje autoportante.jpg");
 }
 .four {
   background-image: url("../assets/imgs/productos/pieza-especial-4.jpg");
@@ -509,40 +505,52 @@ html {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-  max-width: min-content;
-  max-height: 100vh;
-  position: relative;
-  min-width: 50vw;
-  /* object-fit: cover; */
+        font-size: 18px;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  margin-right: 30px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
 }
 
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
+// .swiper-slide:nth-child(2n) {
+//   width: 60%;
+// }
 
-.swiper-slide:nth-child(3n) {
-  width: 40%;
-}
+// .swiper-slide:nth-child(3n) {
+//   width: 40%;
+// }
 
 .swiper-img {
 height: 100%;
 min-width: 100%;
 object-fit: cover;
+}
+
+.clients-card{
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 300ms;
+  &:hover{
+    box-shadow: 0px 5px 15px 0px #00000050;
+  }
+  &:hover .grid-logos {
+        opacity: 1;
+        filter: grayscale(0);
+  }
+}
+
+.product-image{
+  // width: 25%!important;
+  // height: auto;
 }
