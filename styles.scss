@@ -159,6 +159,7 @@ article.card {
     justify-content: center;
     display: flex;
     border-bottom-left-radius: 40px;
+    z-index: 10;
     .overlay-item {
       padding: 50px;
       text-align: left;

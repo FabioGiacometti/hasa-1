@@ -248,6 +248,7 @@ article.card:hover a {
   display: -ms-flexbox;
   display: flex;
   border-bottom-left-radius: 40px;
+  z-index: 10;
 }
 
 #obras .overlay-container .overlay-item {
