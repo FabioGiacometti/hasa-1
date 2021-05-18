@@ -74,7 +74,7 @@ const slideGenerator = (array) => {
   
                 <img src="./assets/imgs/obras/${
                   array[i].images[j]
-                }" class="swiper-img"/>
+                }" class="swiper-img obras-image"/>
             
             </div>`
       );

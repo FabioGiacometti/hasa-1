@@ -11,6 +11,7 @@ html {
   --slider-title: 28px;
   --azul-principal: #006ca7;
   --azul-secundario: #2e9ad5;
+  --max-height: calc(100vw / 3 * 2);
 }
 
 /* utils*/
@@ -446,13 +447,11 @@ footer {
     // padding-left: 15px;
   }
 }
-.mobile-product-image {
-  height: calc(100vw * 0.74); // // position: relative;
-}
-.product-image {
+
+.product-image, .obras-image {
   position: relative;
   overflow: hidden;
-  height: auto;
+  max-height: var(--max-height);
   &:hover::before {
     top: -80px;
     opacity: 0;

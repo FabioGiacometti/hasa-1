@@ -82,6 +82,7 @@ html {
   --slider-title: 28px;
   --azul-principal: #006ca7;
   --azul-secundario: #2e9ad5;
+  --max-height: calc(100vw / 3 * 2);
 }
 
 /* utils*/
@@ -559,17 +560,13 @@ footer .site-map a {
   color: white;
 }
 
-.mobile-product-image {
-  height: calc(100vw * 0.74);
-}
-
-.product-image {
+.product-image, .obras-image {
   position: relative;
   overflow: hidden;
-  height: auto;
+  max-height: var(--max-height);
 }
 
-.product-image:hover::before {
+.product-image:hover::before, .obras-image:hover::before {
   top: -80px;
   opacity: 0;
 }
