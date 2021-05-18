@@ -149,13 +149,15 @@ article.card {
   .overlay-container {
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
-    left: 5vw;
+    right: 0;
+    top: 0;
     width: auto;
     height: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     display: flex;
+    border-bottom-left-radius: 40px;
     .overlay-item {
       padding: 50px;
       text-align: left;
@@ -164,6 +166,7 @@ article.card {
         padding-bottom: 0px;
         color: var(--azul-principal);
         font-size: var(--slider-title);
+        margin: 0;
       }
 
       p {
@@ -426,7 +429,7 @@ footer {
   padding: 10px;
   transition: all 200ms;
   .product-overlay__title {
-    font-family: "Alfa Slab One";
+    font-family: var(--title);
     color: white;
     text-align: center;
   }
@@ -447,31 +450,9 @@ footer {
   height: calc(100vw * 0.74); // // position: relative;
 }
 .product-image {
-  background-position: center;
-  background-size: cover;
-  min-height: 170px;
   position: relative;
   overflow: hidden;
-  &::before {
-    top: 0px;
-    font-variant: JIS90;
-    content: ". . .";
-    display: block;
-    position: absolute;
-    background: #000000a3;
-    right: 0;
-    margin: 9px;
-    /* line-height: 43px; */
-    /* vertical-align: bottom; */
-    padding: 0px 5px 8px;
-    border-radius: 100%;
-    font-weight: 900;
-    color: white;
-    font-size: smaller;
-    transform: rotate(90deg);
-    letter-spacing: -1px;
-    transition: all 200ms;
-  }
+  height: auto;
   &:hover::before {
     top: -80px;
     opacity: 0;
@@ -480,6 +461,7 @@ footer {
 .product-slide:hover > .product-overlay {
   bottom: 0;
   opacity: 1;
+  border-top-left-radius: 20px;
 }
 
 html {
