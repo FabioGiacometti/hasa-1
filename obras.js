@@ -65,9 +65,9 @@ const slideGenerator = (array) => {
                 ${
                   j == 0
                     ? `<span class="overlay-container">
-                <span class="overlay-item">
-                  <h6> Obra: "${array[i].title}" </h6>
-                </span>
+                    <!--<span class="overlay-item">
+                <h6> Obra: "${array[i].title}" </h6> 
+                </span>-->
               </span>`
                     : ""
                 }
