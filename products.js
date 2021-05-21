@@ -50,6 +50,10 @@ const products = [
     {
     image: "./assets/imgs/productos/product_(13).jpg",
     name: "Pieza especial, consultar",
+  },
+  {
+    image: "./assets/imgs/productos/product_(14).jpg",
+    name: "Tapón prueba hidraulica",
   }
 ];
 

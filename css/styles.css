@@ -181,11 +181,18 @@ h6 {
 }
 
 .navbar-light .navbar-nav .nav-link {
+  font-size: 28px;
   color: var(--azul-secundario);
 }
 
 .navbar-light .navbar-nav .nav-link a:hover {
   color: var(--azul-principal);
+}
+
+@media (min-width: 500px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+  }
 }
 
 nav.bg-ligh.navbar-custom {
@@ -692,5 +699,76 @@ html {
 
 .title-icon img {
   width: 20px;
+}
+
+.fab {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--azul-principal);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 2px #00000050;
+          box-shadow: 0 2px 2px #00000050;
+  z-index: 100;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.fab:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 1px 3px #00000050;
+          box-shadow: 0 1px 3px #00000050;
+}
+
+.fab .fab__img {
+  width: 24px;
+  height: 24px;
+}
+
+.fab:hover .chat-cloud {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#contact-scroll {
+  position: relative;
+  bottom: 60px;
+}
+
+.chat-cloud {
+  position: absolute;
+  left: -227px;
+  padding: 10px;
+  background: white;
+  border-radius: 15px;
+  -webkit-transition: all cubic-bezier(0.52, -0.02, 0.18, 1) 500ms;
+  transition: all cubic-bezier(0.52, -0.02, 0.18, 1) 500ms;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 100% 80%;
+          transform-origin: 100% 80%;
+}
+
+.chat-cloud .chat-cloud_triangle {
+  position: absolute;
+  bottom: 0;
+  right: -5.5px;
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 14px solid white;
 }
 /*# sourceMappingURL=styles.css.map */

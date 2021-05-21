@@ -375,10 +375,10 @@ footer .site-map a {
     height: auto;
   }
   .carousel-control-prev {
-    margin-left: -100px;
+    /* margin-left: -100px; */
   }
   .carousel-control-next {
-    margin-right: -100px;
+    /* margin-right: -100px; */
   }
   header {
     position: static;
