@@ -1,6 +1,7 @@
 const services = `
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-up"
+          data-aos-duration="500">
             <article class="card shadow p-4 rounded d-flex">
               <img src="./assets/imgs/iconos/card-industria.svg"
                 alt=""
@@ -17,7 +18,8 @@ const services = `
           </div>
           
           <div class="col-lg-4">
-            <article class="card shadow p-4  mt-xs-4 rounded ">
+            <article class="card shadow p-4  mt-xs-4 rounded " data-aos="fade-up"
+            data-aos-duration="1000">
               <img src="./assets/imgs/iconos/card-clientes.svg"
                 alt=""
                 class="card__image">
@@ -30,7 +32,8 @@ const services = `
             </article>
           </div>
           <div class="col-lg-4">
-            <article class="card shadow p-4 rounded d-flex">
+            <article class="card shadow p-4 rounded d-flex" data-aos="fade-up"
+            data-aos-duration="2000">
               <img src="./assets/imgs/iconos/card-obras.svg"
                 alt=""
                 class="card__image">

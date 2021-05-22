@@ -43,7 +43,6 @@ export function validateForm(form){
   let modal = document.getElementById("confirmacion");
   let confirmModalBtn = document.getElementById("confirmModalBtn");
 
-  
   export const handleModal = {
         displayModal:()=>{
             const spinner = document.getElementById("form-spinner")
