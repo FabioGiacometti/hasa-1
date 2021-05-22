@@ -17,32 +17,14 @@ export function validateForm(form){
       else false;
   }
 
-  export const apiSentMessage = (url,formData) =>{
-
-    fetch(url, { method: 'POST', body: new FormData(formData) })
-    .then(response => {
-      console.log('Success!', response)
-      handleModal.success()
-      spinner.style = "display: none"
-    })
-    .catch(error => {
-      console.error('Error!', error.message)
-      handleModal.failure(error.message)
-    })
-  }
-    
-  confirmModalBtn.addEventListener('click', function(){
-    handleModal.confirmBtn()
-  })
-
-
-  //Modal//
+//Modal//
   let form =document.getElementById('form');
   let spinner =document.getElementById("form-spinner")
   let message = document.getElementById("message");
   let modal = document.getElementById("confirmacion");
   let confirmModalBtn = document.getElementById("confirmModalBtn");
 
+  
   export const handleModal = {
         displayModal:()=>{
             const spinner = document.getElementById("form-spinner")
@@ -63,3 +45,21 @@ export function validateForm(form){
     
   }
   //Modal//
+
+  export const apiSentMessage = (url,formData) =>{
+
+    fetch(url, { method: 'POST', body: new FormData(formData) })
+    .then(response => {
+      console.log('Success!', response)
+      handleModal.success()
+      spinner.style = "display: none"
+    })
+    .catch(error => {
+      console.error('Error!', error.message)
+      handleModal.failure(error.message)
+    })
+  }
+    
+  confirmModalBtn.addEventListener('click', function(){
+    handleModal.confirmBtn()
+  })
