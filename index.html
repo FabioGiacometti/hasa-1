@@ -266,8 +266,8 @@
   <div id="confirmacion"
     class="confirmacion">
     <p id="message">mensaje.</p>
-    <button class="btn btn-primary btn-block"
-      onclick="handleModal()">Aceptar</button>
+    <button id="confirmModalBtn"class="btn btn-primary btn-block"
+      >Aceptar</button>
   </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -285,7 +285,7 @@
   <script src="scripts.js"></script>
   <script src="obras.js"></script>
   <script src="donde-estamos.js"></script>
-  <script src="form.js"></script>
+  <script type="module" src="form.js"></script>
   <script src="footer.js"></script>
   <script>
     var swiper3 = new Swiper('#logo-carousel', {

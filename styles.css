@@ -171,9 +171,16 @@ h6 {
   border-color: var(--azul-principal);
 }
 
+.btn-success
+
 .btn-success:hover {
   background-color: var(--azul-secundario);
   border-color: var(--azul-principal);
+}
+
+.btn-primary:disabled{
+  background-color: grey;
+  color:white;
 }
 
 .navbar-light .navbar-nav .nav-link {

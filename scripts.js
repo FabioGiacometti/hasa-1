@@ -92,7 +92,7 @@ $("#carousel-hero").carousel({
 //   });
 // });
 
-let isModalVisible = false;
+/* let isModalVisible = false;
 let isSpinnerVisible = false;
 let message = document.getElementById("message");
 let modal = document.getElementById("confirmacion");
@@ -107,5 +107,5 @@ function handleModal(status) {
     ? modal.classList.add("center")
     : modal.classList.remove("center");
   isModalVisible = !isModalVisible;
-}
+} */
 

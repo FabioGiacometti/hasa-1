@@ -101,6 +101,12 @@ h2 {
   }
 }
 
+.btn-primary:disabled{
+  background-color: grey;
+  border-color: grey;
+  color:white;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-size: 28px;
   color: var(--azul-secundario);
@@ -624,7 +630,7 @@ text-align: center;
   border-radius: 15px;
   transition: all cubic-bezier(.52,-0.02,.18,1) 500ms;
   transform: scale(0);
-  transform-origin: 100% 80%;
+  transform-origin: 120% 60%;
     .chat-cloud_triangle{
     position: absolute;
     bottom: 0;

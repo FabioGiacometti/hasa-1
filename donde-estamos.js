@@ -3,12 +3,13 @@ const dondeEstamos = `<div class="container-fluid formulario-contacto pt-3 pt-md
   <div class="col-md-6 p-4 card shadow rounded d-flex mt-md-n2 mb-md-n2" style="z-index: 2">
     <h2 class="text-center text-md-left mb-2 mb-4"
       style="color: #006CA7">Contacto</h2>
-    <form class=""
+    <form id="form" class=""
       name="submit-to-google-sheet">
       <div class="form-group">
         <label for="nombre"
           style="color: gray">Nombre</label>
         <input type="text"
+          required
           name="nombre"
           class="form-control"
           id="nombre"
@@ -20,25 +21,30 @@ const dondeEstamos = `<div class="container-fluid formulario-contacto pt-3 pt-md
         <label for="email"
           style="color: gray">Email</label>
         <input type="email"
+          required  
           name="email"
           class="form-control"
           id="email"
           placeholder="Su email por favor"
           style="color: gray">
+          
       </div>
       <div class="form-group">
         <label for="mensaje"
           style="color: gray">Mensaje</label>
         <textarea class="form-control"
+          required  
           name="mensaje"
           id="mensaje"
           rows="3"
           style="color: gray"></textarea>
+          
       </div>
       <button 
         type="submit"
         id="submit"
         class="btn btn-primary btn-block"
+        disabled
         
         >Enviar! <span id="form-spinner"
           class="spinner-span"></span> </button>

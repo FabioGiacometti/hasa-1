@@ -180,6 +180,12 @@ h6 {
   border-color: var(--azul-principal);
 }
 
+.btn-primary:disabled {
+  background-color: grey;
+  border-color: grey;
+  color: white;
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-size: 28px;
   color: var(--azul-secundario);
@@ -757,8 +763,8 @@ html {
   transition: all cubic-bezier(0.52, -0.02, 0.18, 1) 500ms;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transform-origin: 100% 80%;
-          transform-origin: 100% 80%;
+  -webkit-transform-origin: 120% 60%;
+          transform-origin: 120% 60%;
 }
 
 .chat-cloud .chat-cloud_triangle {
