@@ -56,11 +56,7 @@ const dondeEstamos = `<div class="container-fluid formulario-contacto pt-3 ">
     <img class="img-fluid w-100 h-100"
       src="./assets/imgs/mapaHasa.png"
       alt=""
-      style="   
-    object-fit: cover;
-    object-position: 56.9%;
-    min-height: 340px;
-     ">
+      >
   </a>
 
 </div>

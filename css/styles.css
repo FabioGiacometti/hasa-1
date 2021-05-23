@@ -347,9 +347,22 @@ article.card:hover a {
   color: white;
 }
 
-.formulario-contacto a > img {
-  min-height: 380px !important;
-  margin-top: 22px;
+#donde-estamos a > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 53%;
+     object-position: 53%;
+  margin-top: 0px;
+}
+
+@media (max-width: 770px) {
+  #donde-estamos a > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 332px;
+    padding-top: 36px;
+    margin-bottom: 0px;
+  }
 }
 
 #carousel-logo .carousel-inner {
@@ -762,7 +775,7 @@ html {
   z-index: 2;
   position: relative;
   max-width: 490px;
-  margin: -73px 0px -49px 0px;
+  margin: -57px 0px -49px 0px;
 }
 
 .chat-cloud {
