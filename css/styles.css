@@ -242,7 +242,7 @@ article.card:hover a {
 
 #obras {
   background-color: var(--azul-principal);
-  padding-bottom: 50px;
+  padding-bottom: 163px;
 }
 
 #obras .overlay-container {
@@ -345,6 +345,11 @@ article.card:hover a {
 
 .formulario-contacto .form-group {
   color: white;
+}
+
+.formulario-contacto a > img {
+  min-height: 380px !important;
+  margin-top: 22px;
 }
 
 #carousel-logo .carousel-inner {
@@ -751,6 +756,13 @@ html {
 #contact-scroll {
   position: relative;
   bottom: 60px;
+}
+
+.contact-form-wrapper {
+  z-index: 2;
+  position: relative;
+  max-width: 490px;
+  margin: -73px 0px -49px 0px;
 }
 
 .chat-cloud {

@@ -157,7 +157,7 @@ article.card {
 
 #obras {
   background-color: var(--azul-principal);
-  padding-bottom: 50px;
+  padding-bottom: 163px;
   .overlay-container {
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
@@ -245,7 +245,19 @@ article.card {
   .form-group {
     color: white;
   }
+
+  @media (max-width: 770px) {
+    a > img {
+      width: 118%;
+      min-height: 380px !important;
+      margin-top: 22px;
+    }
+  }
 }
+  
+
+}
+
 
 #carousel-logo {
   .carousel-inner {
@@ -621,6 +633,17 @@ text-align: center;
   position: relative;
   bottom: 60px
 }
+
+.contact-form-wrapper{
+    z-index: 2;
+    position: relative;
+    max-width: 490px;
+    margin: -73px 0px -49px 0px;
+
+
+
+}
+
 
 .chat-cloud{
   position: absolute;
