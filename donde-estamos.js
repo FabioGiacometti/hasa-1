@@ -1,6 +1,6 @@
 const dondeEstamos = `<div class="container-fluid formulario-contacto pt-3 pt-md-0">
 <div class="row flex-row-reverse container m-auto" >
-  <div class="col-md-6 p-4 card shadow rounded d-flex mt-md-n2 mb-md-n2" style="z-index: 2" data-aos="fade-left" data-aos-duration="1800">
+  <div class="col-md-6 p-4 card shadow rounded d-flex mt-md-n2 mb-md-n2" style="z-index: 2"  data-aos="fade-right">
     <h2 class="text-center text-md-left mb-2 mb-4"
       style="color: #006CA7">Contacto</h2>
     <form id="form"  class=""
