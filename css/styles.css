@@ -282,10 +282,6 @@ article.card:hover a {
   margin: 0;
 }
 
-#hero {
-  background-color: var(--azul-principal);
-}
-
 #hero .carousel-item img {
   min-height: 500px;
   width: 100vw;
@@ -400,6 +396,7 @@ footer .footer-title {
 footer .footer-icon {
   height: 28px;
   margin-right: 0.5rem;
+  margin-top: 6px;
 }
 
 footer .footer-row {
@@ -463,8 +460,29 @@ footer .site-map a {
   }
 }
 
+.jumbotron-container {
+  top: 50vh;
+  -webkit-transform: translateY(-44%);
+          transform: translateY(-44%);
+  z-index: 50;
+}
+
 .jumbotron {
   background-color: #ffffffc9;
+}
+
+@media (max-width: 500px) {
+  .jumbotron {
+    width: 105vw;
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
+    background-color: transparent;
+  }
+  .jumbotron .display-3 {
+    color: white;
+    -webkit-filter: drop-shadow(0px 3px 2px #00000050);
+            filter: drop-shadow(0px 3px 2px #00000050);
+  }
 }
 
 /*No mover*/
@@ -639,6 +657,10 @@ html {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 12px !important;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  overflow: hidden;
 }
 
 .swiper-img {
@@ -657,6 +679,7 @@ html {
   transition: -webkit-box-shadow 300ms;
   transition: box-shadow 300ms;
   transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  max-width: 200px;
 }
 
 .clients-card:hover {
@@ -668,6 +691,36 @@ html {
   opacity: 1;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+.clients-card .clients-card__name {
+  display: none;
+}
+
+.filler {
+  width: 200px;
+  height: 137px;
+  background: red;
+  display: none;
+}
+
+.clients-card:hover .clients-card__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients-card:hover + .filler {
+  display: block;
+}
+
+#myVideo {
+  width: 100%;
+  min-width: 770px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .show-product-List {
@@ -801,5 +854,23 @@ html {
   border-left: 14px solid transparent;
   border-right: 7px solid transparent;
   border-bottom: 14px solid white;
+}
+
+.btn-outline-primary {
+  border: 1px solid mediumseagreen;
+  color: white;
+  color: gray;
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background: forestgreen;
+  border: 1px solid forestgreen;
+}
+
+.footer_link {
+  display: block;
+  color: white;
+  font-size: 18px;
 }
 /*# sourceMappingURL=styles.css.map */

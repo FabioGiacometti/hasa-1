@@ -8,8 +8,6 @@
   <title>Hasa</title>
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/styles/css/burgers.css">
   <link rel="stylesheet" href="swiper.css" />
@@ -26,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
       <div class="container-sm">
         <a class="navbar-brand"
-          href="#"><img src="assets/imgs/iconos/logo-header.svg"
+          href="#"><img src="assets/imgs/iconos/logo-header.png"
             class="logo-header"
             alt=""></a>
 
@@ -72,13 +70,11 @@
   <main>    
     <section id="hero"
       class="align-items-center align-items-lg-center d-flex flex-column " style="max-height: 100vh; overflow: hidden;">
-        <div class="container position-absolute" style="top: 50vh;transform: translateY(-50%);z-index: 50;">
-          <div class="jumbotron col-lg-6" style="z-index: 1;">
+        <div class="container position-absolute jumbotron-container" >
+          <div class="jumbotron col-lg-6" style="z-index: 1;padding: 3.4em 2em">
             <div class=" d-flex-row d-flex align-items-center p-lg-4">
               <div class="jumbotron-panel ">
                 <h1 class="display-3 pt-2 ">Más de 30 años brindando confianza y calidad a nuestros clientes.</h1>
-                <!-- <p class="hero__description pb-2 w-80 pr-md-5">Nuestra empresa cuenta con una larga trayectoria metalúrgica, especializándose en fabricación y  montaje de cañerías y accesorios de acero para la conducción de fluidos.
-                </p>-->
                 <a href="#productos"><button class="btn btn-success d-block d-lg-inline-block">Conozca nuestros
                   productos</button></a> 
                   
@@ -93,12 +89,22 @@
         class="carousel slide" style="max-width: 1980px; width: 100%; max-height: 930px;"
         data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" id="hero-video" >
+            <video autoplay muted loop id="myVideo">
+              <source src="./assets/imgs/backgrounds/video.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
             <img class="item"
-              src="./assets/imgs/hero_/slider-1.jpg"
-              alt="First slide">
+              src="./assets/imgs/hero_/slider-1.png"
+              alt="First slide" 
+              style="min-height: 500px;
+              width: 100vw;
+              -o-object-fit: cover;
+              object-fit: cover;
+              max-height: 100vh;
+              filter: brightness(0.8) contrast(0.9) opacity(0.96);">
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <img class="item"
               src="./assets/imgs/hero_/slider-2.jpg"
               alt="Thirds slide">
@@ -117,7 +123,7 @@
             <img class="item"
               src="./assets/imgs/hero_/slider-6.jpg"
               alt="Thirds slide">
-          </div>
+          </div> -->
           
           
           <a class="carousel-control-prev"
@@ -253,6 +259,50 @@
   </main>
 
   <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+          <div class="col col-xs-12 d-flex justify-content-center justify-content-md-start">
+              <img class="footer-logo"
+              src="./assets/imgs/iconos/logo-footer.png">
+          </div>
+          </div>
+          <div class="row d-flex justify-content-center offset-md-1 pl-md-4">
+          <div class="col-12 col-md-6">
+              <h5 class="footer-title">Contactanos</h5>
+              <div class="d-flex footer-row">
+              <img class="footer-icon"
+                  src="./assets/imgs/iconos/ubicación.svg"
+                  alt="">
+              <p>SS Raul O. Gorordo 250 (altura Juan B. Justo 6300)</p>
+              </div>
+              <div class="d-flex footer-row">
+              <img class="footer-icon"
+                  src="./assets/imgs/iconos/mail.svg"
+                  alt="">
+              <p>Contacto comercial: hasa@industriashasa.com.ar <br>
+                  Contacto técnico: tecnica@industriashasa.com.ar</p>
+              </div>
+              <div class="d-flex footer-row">
+              <img class="footer-icon"
+                  src="./assets/imgs/iconos/telefono.svg"
+                  alt="">
+                  <a href="tel:5493514921770" class="footer_link">+ 54 (351) 4921770     </a>
+                 
+                  <a href="tel:5493514922917" class="footer_link">   + 54 (351)  4922917 </a>
+                  
+              </div>
+          </div>
+          <div class="col-12 col-md-6">
+              <h6 class="footer-title">MAPA DEL SITIO</h6>
+              <div class="site-map">
+              <a href="#">Clientes</a>
+              <a href="#">Obras</a>
+              <a href="#">Productos</a>
+              <a href="#">Contacto</a>
+              </div>
+          </div>
+      </div>
+  </div>
   </footer>
 
   <a href="#contact-scroll" class="fab absolute">
@@ -287,7 +337,6 @@
   <script src="obras.js"></script>
   <script src="donde-estamos.js"></script>
   <script type="module" src="form.js"></script>
-  <script src="footer.js"></script>
   <script>
     var swiper3 = new Swiper('#logo-carousel', {
       slidesPerView: 1,
@@ -324,9 +373,6 @@
   </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="aos.js"></script>
-
-
-
 </body>
 
 </html>
