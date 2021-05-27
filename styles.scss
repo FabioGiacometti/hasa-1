@@ -45,9 +45,6 @@ header {
 main {
   padding-top: 60px;
 }
-/*   .carousel-inner{
-    //min-height: 570px;
-  } */
 
 .splide__slide img {
   width: 100%;
@@ -132,7 +129,6 @@ nav.bg-ligh.navbar-custom {
 article.card {
   margin-top: 40px;
   &:hover {
-    //border: 8px solid black;
     background-color: var(--azul-principal);
     color: white;
     a {
@@ -142,7 +138,6 @@ article.card {
 }
 
 .servicios {
-  // margin-top: 2rem;
   padding: 2rem 0rem 2rem 0rem;
   background-color: #c4c4c4;
   p {
@@ -186,8 +181,6 @@ article.card {
 }
 
 #hero {
-
-
   .carousel-item {
     img {
       min-height: 500px;
@@ -235,7 +228,6 @@ article.card {
 }
 
 .formulario-contacto {
-  // background-image:url("../assets/imgs/mapaHasa.png");
   background: #262b3f;
   .form-group {
     color: white;
@@ -257,8 +249,6 @@ article.card {
     }
   }
 }
-
-
 
 #carousel-logo {
   .carousel-inner {
@@ -327,7 +317,7 @@ footer {
     .carousel-item {
       img {
         max-height: 80vh;
-        // width: 100vw;
+
         object-fit: cover;
       }
     }
@@ -444,7 +434,6 @@ footer {
   }
 }
 
-
 .card__arrow::after {
   content: url(../assets/imgs/iconos/arrow.png);
   position: relative;
@@ -479,10 +468,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   .product__items {
-    // padding-top: 1.5rem;
     color: white;
-    // min-height: 260px;
-    // padding-left: 15px;
   }
 }
 
@@ -512,33 +498,23 @@ html {
 
 .swiper-slide {
   text-align: center;
-        font-size: 18px;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        border-radius: 12px!important;
-    height: min-content;
-    overflow: hidden;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 12px!important;
+  height: min-content;
+  overflow: hidden;
 }
-
-// .swiper-slide:nth-child(2n) {
-//   width: 60%;
-// }
-
-// .swiper-slide:nth-child(3n) {
-//   width: 40%;
-// }
 
 .swiper-img {
 height: 100%;
@@ -552,8 +528,6 @@ object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
   transition: box-shadow 300ms;
-  max-width: 200px;
-  
   &:hover{
     box-shadow: 0px 5px 15px 0px #00000050;
   }
@@ -563,7 +537,6 @@ object-fit: cover;
   }
   .clients-card__name{
     display: none;
-  
   }
 }
 .filler{
@@ -603,15 +576,15 @@ object-fit: cover;
 }
 
 #show-more-btn{
-text-align: center;
-    display: block;
-    font-family: var(--title);
-    color: white;
-    background-color: var(--azul-principal);
-    width: auto;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    padding:0 20px 7px
+  text-align: center;
+  display: block;
+  font-family: var(--title);
+  color: white;
+  background-color: var(--azul-principal);
+  width: auto;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding:0 20px 7px
 }
 
 .more-prods{
@@ -619,18 +592,15 @@ text-align: center;
   bottom: -20px;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--azul-principal);
   border-radius: 10px;
@@ -661,7 +631,6 @@ text-align: center;
   &:hover{
     transform: translateY(-1px);
     box-shadow: 0 1px 3px #00000050;
-
   }
   .fab__img{
     width: 24px;
@@ -669,6 +638,10 @@ text-align: center;
   }
   &:hover .chat-cloud{
     transform: scale(1);
+  }
+  @media (max-width: 500px){
+    right: 30px;
+    bottom: 30px;
   }
 }
 
@@ -694,7 +667,7 @@ text-align: center;
   transition: all cubic-bezier(.52,-0.02,.18,1) 500ms;
   transform: scale(0);
   transform-origin: 120% 60%;
-    .chat-cloud_triangle{
+  .chat-cloud_triangle{
     position: absolute;
     bottom: 0;
     right: -5.5px;
@@ -703,7 +676,7 @@ text-align: center;
     border-left: 14px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 14px solid white;
-    }
+  }
 }
 
 .btn-outline-primary {
@@ -713,7 +686,7 @@ text-align: center;
   &:hover{
     color: white;
     background: forestgreen;
-  border: 1px solid forestgreen;
+    border: 1px solid forestgreen;
   }
 }
 
