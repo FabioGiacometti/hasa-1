@@ -268,15 +268,21 @@ article.card:hover a {
 
 #obras .overlay-container .overlay-item {
   padding: 50px;
-  text-align: left;
+  text-align: right;
 }
 
 #obras .overlay-container .overlay-item h6 {
-  font-size: 28px;
+  font-size: 24px;
   padding-bottom: 0px;
   color: var(--azul-principal);
   font-size: var(--slider-title);
   margin: 0;
+}
+
+@media (max-width: 500px) {
+  #obras .overlay-container .overlay-item {
+    padding: 20px 30px;
+  }
 }
 
 #hero .carousel-item img {
@@ -601,6 +607,14 @@ footer .site-map a {
   font-family: var(--title);
   color: white;
   text-align: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .product-overlay {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 .productos {
@@ -871,5 +885,11 @@ html {
   display: block;
   color: white;
   font-size: 18px;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+.footer_link:hover {
+  color: var(--azul-secundario);
 }
 /*# sourceMappingURL=styles.css.map */

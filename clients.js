@@ -15,6 +15,11 @@ const clients = [
     image: "./assets/imgs/clients/logo-alta-gracia.jpg",
   },
   {
+    url: "https://www.villacarlospaz.gov.ar/",
+    name: "Municipalidad de Villa Carlos Paz",
+    image: "./assets/imgs/clients/logo-vcp.png",
+  },
+  {
     url: "https://www.exportadoresdecordoba.com/empresas/arc-srl-2810.html",
     name: "ARC Empresa Constructora",
     image: "./assets/imgs/clients/logo-arc-1.png",
@@ -40,7 +45,7 @@ const clients = [
     image: "./assets/imgs/clients/logo-coop-cosquin.png",
   },
   {
-    url: "",
+    url: "https://cruz-del-eje.infoisinfo-ar.com/ficha/cooperativa-de-servicios-sociales-c/79247",
     name: "Cooperativa de servicios Cruz del Eje",
     image: "./assets/imgs/clients/logo-coop-cruz.png",
   },
@@ -70,7 +75,7 @@ const clients = [
     image: "./assets/imgs/clients/logo-infra.png",
   },
   {
-    url: "./assets/imgs/logos/logo-install.png",
+    url: "https://installsrl.com.ar/",
     name: "Inst'all Srl",
     image: "./assets/imgs/clients/logo-install.png",
   },
@@ -138,13 +143,14 @@ const clientGridGenerator = (array) => {
 
 const clientSliderGenerator = (data) => {
   return `
-    <a href="${data.url} " target="_blank" class="clients-card swiper-slide">
-    <img class=""
-      src="${data.image}"
-      alt="${data.name}"
-      title="${data.name}">
-  
-  </a>
+    <div  class="clients-card swiper-slide">
+    <a href="${data.url} " target="_blank">
+      <img class=""
+        src="${data.image}"
+        alt="${data.name}"
+        title="${data.name}">
+    </a>
+  </div>
     `;
 };
 

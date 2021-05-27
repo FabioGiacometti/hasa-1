@@ -121,7 +121,7 @@
               alt="Thirds slide">
           </div> -->
           
-          
+<!--           
           <a class="carousel-control-prev"
             href="#carousel-hero"
             role="button"
@@ -137,7 +137,7 @@
             <span class="carousel-control-next-icon"
               aria-hidden="true" style="position: relative;"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> -->
       </div>
 
     </section>
@@ -159,9 +159,10 @@
             <div class="col" id="desktop-products-carousel">
               <div class="swiper-container container" id="products-swiper">
               <div class="swiper-wrapper"  id="products-images">
-              
               </div>
-              <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-pagination"></div> -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
              </div>
             </div>
           </div>
@@ -182,8 +183,8 @@
                 <div class="col-12 col-sm-6 col-md-3">
                   <!-- <div class="w-100 product-image two"> <span class="product-overlay"><p class="product-overlay__title">Pieza tanto</p></span></div> -->
                   <ul class="product__items">
-                    <li class="product__description">Conexión de unión tipo dresser simple bulonería</li>
-                    <li class="product__description">Conexión de unión tipo dresser doble bulonería</li>
+                    <li class="product__description">Junta conexión de unión tipo Dresser simple bulonería</li>
+                    <li class="product__description">Junta conexión de unión tipo Dresser doble bulonería</li>
                     <li class="product__description">Tambor de reparación</li>
                     <li class="product__description">Reducción concéntrica</li>
                     <li class="product__description">Adaptador de brida</li>
@@ -203,7 +204,7 @@
                 <div class="col-12 col-sm-6 col-md-3">
                   <!-- <div class="w-100 product-image four"> <span class="product-overlay"><p class="product-overlay__title">Pieza tanto</p></span></div> -->
                   <ul class="product__items">
-                    <li class="product__description"> Compuertas Aisi 304 Y 316</li>
+                    <li class="product__description"> Compuertas AISI 304 Y 316</li>
                     <li class="product__description"> Compuertas A° SAE 1010/1020</li>
                     <li class="product__description"> Mecanismo de izaje</li>
                     <li class="product__description"> Tapón prueba hidráulica</li>
@@ -226,6 +227,7 @@
         <div class="d-flex justify-content-center mb-5" style="flex-wrap: wrap;" id="clients-container">
          
         </div>
+        
       </div>
       
       <!-- Mobile Clients carousel -->
@@ -233,9 +235,10 @@
       <div id="desktop-logos-carousel" class="col d-block d-md-none">
         <div class="swiper-container container" id="logo-carousel">
         <div class="swiper-wrapper"  id="logos-images">
-        
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
        </div>
       </div>
 
@@ -246,12 +249,77 @@
       <div class="swiper-container container" id="obras-swiper">
         <div class="swiper-wrapper"  id="obras-images">
         </div>
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 <div id="contact-scroll" ></div>
-    <section id="donde-estamos" ></section>
-    </section>
+<section id="donde-estamos" >
+  <div class="container-fluid formulario-contacto pt-3 ">
+    <div class="row flex-row-reverse container m-auto" >
+      <div class="col-md-6 p-4 card shadow rounded d-flex contact-form-wrapper" style="z-index: 2"  data-aos="fade-right">
+        <h2 class="text-center text-md-left mb-2 mb-4"
+          style="color: #006CA7">Contacto</h2>
+        <form id="form"  class=""
+          name="submit-to-google-sheet">
+          <div class="form-group">
+            <label for="nombre"
+              style="color: gray">Nombre</label>
+            <input type="text"
+              required
+              name="nombre"
+              class="form-control"
+              id="nombre"
+              aria-describedby="nombre"
+              placeholder="Ingrese su nombre"
+              style="color: gray">
+          </div>
+          <div class="form-group">
+            <label for="email"
+              style="color: gray">Email</label>
+            <input type="email"
+              required  
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="Su email por favor"
+              style="color: gray">
+              
+          </div>
+          <div class="form-group">
+            <label for="mensaje"
+              style="color: gray">Mensaje</label>
+            <textarea class="form-control"
+              required  
+              name="mensaje"
+              id="mensaje"
+              rows="3"
+              style="color: gray"></textarea>
+              
+          </div>
+          <button 
+            type="submit"
+            id="submit"
+            class="btn btn-primary btn-block"
+            disabled
+            
+            >Enviar! <span id="form-spinner"
+              class="spinner-span"></span> </button>
+        </form>
+      </div>
+      <a class="col-md-6 p-0" title="Haga click para ver en Google Maps"
+        href="https://www.google.com/maps/place/HASA+S.A/@-31.3479384,-64.178957,18z/data=!4m5!3m4!1s0x943299bde333735f:0xeee11d3a175398a7!8m2!3d-31.347595!4d-64.17846"
+        target="_blank">
+        <img class="img-fluid w-100 h-100"
+          src="./assets/imgs/mapaHasa.png"
+          alt=""
+          >
+      </a>
+    
+    </div>
+    </div>
+</section>
   </main>
 
   <footer id="footer">
@@ -269,22 +337,26 @@
               <img class="footer-icon"
                   src="./assets/imgs/iconos/ubicación.svg"
                   alt="">
-              <p>SS Raul O. Gorordo 250 (altura Juan B. Justo 6300)</p>
+              <a  href="https://www.google.com/maps/place/HASA+S.A/@-31.3479384,-64.178957,18z/data=!4m5!3m4!1s0x943299bde333735f:0xeee11d3a175398a7!8m2!3d-31.347595!4d-64.17846"
+              target="_blank" class="footer_link" title="Abrir en Google Maps">SS Raul O. Gorordo 250 (altura Juan B. Justo 6300)</a>
               </div>
               <div class="d-flex footer-row">
               <img class="footer-icon"
                   src="./assets/imgs/iconos/mail.svg"
                   alt="">
-              <p>Contacto comercial: hasa@industriashasa.com.ar <br>
-                  Contacto técnico: tecnica@industriashasa.com.ar</p>
+              <span>
+                <p>Contacto comercial: <br><a href="mailto:hasa@industriashasa.com.ar" class="footer_link" title="Enviar correo al sector comercial">hasa@industriashasa.com.ar</a></p>
+                <p>Contacto técnico: <br><a href="mailto:tecnica@industriashasa.com.ar" class="footer_link" title="Enviar correo al area tecnica">tecnica@industriashasa.com.ar</a></p>
+              </span> 
               </div>
               <div class="d-flex footer-row">
               <img class="footer-icon"
                   src="./assets/imgs/iconos/telefono.svg"
                   alt="">
-                  <a href="tel:5493514921770" class="footer_link">+ 54 (351) 4921770     </a>
-                 
-                  <a href="tel:5493514922917" class="footer_link">   + 54 (351)  4922917 </a>
+                  <span>
+                    <a href="tel:5493514921770" class="footer_link" title="Contacto telefonico">+ 54 (351) 4921770     </a>
+                    <a href="tel:5493514922917" class="footer_link" title="Contacto telefonico">   + 54 (351)  4922917 </a>
+                  </span>
                   
               </div>
           </div>
@@ -352,6 +424,10 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
     });
 
     var swiper2 = new Swiper('#products-swiper', {
@@ -365,6 +441,10 @@
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
     })
   </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -168,13 +168,16 @@ article.card {
     z-index: 10;
     .overlay-item {
       padding: 50px;
-      text-align: left;
+      text-align: right;
       h6 {
-        font-size: 28px;
+        font-size: 24px;
         padding-bottom: 0px;
         color: var(--azul-principal);
         font-size: var(--slider-title);
         margin: 0;
+      }
+      @media (max-width: 500px){
+        padding: 20px 30px;      
       }
     }
   }
@@ -460,6 +463,11 @@ footer {
     font-family: var(--title);
     color: white;
     text-align: center;
+    margin-bottom: 0;
+  }
+  @media (max-width: 500px){
+    bottom: 0;
+    opacity: 1
   }
 }
 
@@ -694,4 +702,9 @@ object-fit: cover;
   display: block;
   color: white;
   font-size: 18px;
+  font-weight: lighter;
+  text-decoration: underline;
+  &:hover{
+    color: var(--azul-secundario);
+  }
 }
