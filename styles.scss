@@ -693,8 +693,11 @@ object-fit: cover;
   color: gray;
   &:hover{
     color: white;
-    background: forestgreen;
-    border: 1px solid forestgreen;
+    background: mediumseagreen;
+    border: 1px solid mediumseagreen;
+  }
+  @media (max-width: 500px) {
+    color: white;
   }
 }
 

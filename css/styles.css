@@ -877,8 +877,14 @@ html {
 
 .btn-outline-primary:hover {
   color: white;
-  background: forestgreen;
-  border: 1px solid forestgreen;
+  background: mediumseagreen;
+  border: 1px solid mediumseagreen;
+}
+
+@media (max-width: 500px) {
+  .btn-outline-primary {
+    color: white;
+  }
 }
 
 .footer_link {

@@ -1,6 +1,6 @@
 const products = [
     {
-      image: "./assets/imgs/productos/product_(1).png",
+      image: "./assets/imgs/productos/product_(1).jpg",
       name: "Carretel reduccion - ramal Te - ramal Y - Curva 90º",
     },
     {
