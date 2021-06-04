@@ -9,7 +9,7 @@ const products = [
     },
     {
       image: "./assets/imgs/productos/product_(3).jpg",
-      name: "Curva manifold",
+      name: "Sifón Omega",
     },
     {
       image: "./assets/imgs/productos/product_(4).jpg",
@@ -49,20 +49,17 @@ const products = [
     },  
     {
     image: "./assets/imgs/productos/product_(13).jpg",
-    name: "Pieza especial, consultar",
+    name: "Curva especial con derivación",
   },
   {
     image: "./assets/imgs/productos/product_(14).jpg",
     name: "Tapón prueba hidraulica",
   }, {
     image: "./assets/imgs/productos/product_(15).jpg",
-    name: "Pieza Especial, consultar",
+    name: "Reducción especial",
   }, {
     image: "./assets/imgs/productos/product_(16).jpg",
-    name: "Pieza especial, consultar",
-  }, {
-    image: "./assets/imgs/productos/product_(17).jpg",
-    name: "Pieza especial, consultar",
+    name: "Reducciones y junta de desmontaje autoportante",
   }
 ];
 
