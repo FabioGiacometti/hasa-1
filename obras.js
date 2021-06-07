@@ -25,7 +25,7 @@ const obras = [
     active: true,
     title: "Alberdi",
     year: "2017",
-    description: "Obra nueva tercera etapa",
+    description: "Obra Alberdi - Tercera etapa",
     images: [
       "alberdi(1).jpg",
       "alberdi(2).jpg",
@@ -66,7 +66,7 @@ const obras = [
   {
     title: "Villa Dolores",
     year: "2010",
-    description: "Obra Embalse nivelador",
+    description: "Obra Embalse nivelador Villa Dolores",
     images: ["villa_dolores1.jpg", "villa_dolores2.jpg", "villa_dolores3.jpg"],
   },
 ];
@@ -91,7 +91,7 @@ const slideGenerator = (array) => {
                     : ""
                 }
   
-                <img src="./assets/imgs/obras/${
+                <img loading="lazy" src="./assets/imgs/obras/${
                   array[i].images[j]
                 }" class="swiper-img obras-image"/>
             

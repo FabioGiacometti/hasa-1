@@ -72,7 +72,7 @@ const productListContainer = document.getElementById('product-list-container').o
 const product = (data) => {
     return `
         <div class="swiper-slide product-slide">
-        <img src="${data.image}" class="product-image">
+        <img loading="lazy" src="${data.image}" class="product-image">
         <span class="product-overlay">
            <p class="product-overlay__title">${data.name}</p>
         </span>

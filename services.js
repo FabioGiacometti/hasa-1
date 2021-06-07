@@ -3,7 +3,7 @@ const services = `
           <div class="col-lg-4" data-aos="fade-up"
           data-aos-duration="500">
             <article class="card shadow p-4 rounded d-flex">
-              <img src="./assets/imgs/iconos/card-industria.svg"
+              <img loading="lazy" src="./assets/imgs/iconos/card-industria.svg"
                 alt=""
                 class="card__image">
               <p class="card__description p-2 pt-4">
@@ -20,7 +20,7 @@ const services = `
           <div class="col-lg-4">
             <article class="card shadow p-4  mt-xs-4 rounded " data-aos="fade-up"
             data-aos-duration="1000">
-              <img src="./assets/imgs/iconos/card-clientes.svg"
+              <img loading="lazy" src="./assets/imgs/iconos/card-clientes.svg"
                 alt=""
                 class="card__image">
               <p class="card__description p-2 pt-4">Trabajamos bajo normas, a solicitud de nuestros clientes. Nuestra experiencia y conocimiento en el rubro nos permite ofrecerles en forma exclusiva, asistencia de preventa y postventa, para
@@ -34,7 +34,7 @@ const services = `
           <div class="col-lg-4">
             <article class="card shadow p-4 rounded d-flex" data-aos="fade-up"
             data-aos-duration="2000">
-              <img src="./assets/imgs/iconos/card-obras.svg"
+              <img loading="lazy" src="./assets/imgs/iconos/card-obras.svg"
                 alt=""
                 class="card__image">
               <p class="card__description p-2 pt-4">Nuestra misión es brindar en forma proactiva soluciones de

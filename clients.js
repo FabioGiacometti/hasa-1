@@ -129,7 +129,7 @@ const clientGridGenerator = (array) => {
   for (let i = 0; i < array.length; i++) {
     arr.push(`
     <a href="${array[i].url} " target="_blank" class="clients-card">
-    <img class="grid-logos"
+    <img loading="lazy" class="grid-logos"
     src="${array[i].image}"
     alt="${array[i].name}"
     title="${array[i].name}">
@@ -145,7 +145,7 @@ const clientSliderGenerator = (data) => {
   return `
     <div  class="clients-card swiper-slide">
     <a href="${data.url} " target="_blank">
-      <img class=""
+      <img loading="lazy" class=""
         src="${data.image}"
         alt="${data.name}"
         title="${data.name}">
