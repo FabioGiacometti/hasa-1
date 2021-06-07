@@ -83,9 +83,8 @@ const slideGenerator = (array) => {
                   j == 0
                     ? `<span class="overlay-container">
                     <span class="overlay-item">
-                    <h6 style="margin-right: -11px;"> Obra: "${array[i].title}" </h6> 
-                    <h4>${array[i].description}</h4>
-                    <h5 style="color: gray; line-height: 10px;"> Año: ${array[i].year} </h5> 
+                    <h6 >${array[i].description}</h6> 
+                    <h5 style="color: gray; margin-top: 6px;"> Año: ${array[i].year} </h5> 
                 </span>
               </span>`
                     : ""

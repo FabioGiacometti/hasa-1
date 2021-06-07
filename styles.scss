@@ -167,7 +167,7 @@ article.card {
     border-bottom-left-radius: 40px;
     z-index: 10;
     .overlay-item {
-      padding: 50px;
+      padding: 30px;
       text-align: right;
       h6 {
         font-size: 24px;
@@ -264,7 +264,7 @@ article.card {
 
 footer {
   bottom: 0px;
-  background-image: url("../assets/imgs/footer-back.png");
+  background-image: url("../assets/imgs/footer-back.jpg");
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
@@ -472,7 +472,7 @@ footer {
 }
 
 .productos {
-  background: url(../assets/imgs/productos-fondo.png);
+  background: url(../assets/imgs/productos-fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   .product__items {
